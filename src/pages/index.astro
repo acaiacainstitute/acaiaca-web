@@ -606,6 +606,44 @@ import Layout from '../layouts/Layout.astro';
         </a>
       </div>
     </section>
+
+    <section class="institutional-implications" aria-labelledby="institutional-implications-title">
+      <div class="page-shell implications-inner">
+        <p class="eyebrow implications-eyebrow">Institutional Implications</p>
+        <h2 id="institutional-implications-title">
+          When AI participates in how an institution judges, remembers, delegates,
+          and acts, governance changes.
+        </h2>
+        <p class="implications-question">
+          If an enterprise AI system accumulates years of proprietary context and
+          delegated capability, who controls that state when the model, vendor,
+          employee, or organization changes?
+        </p>
+        <ul class="implications-field" aria-label="Institutional implication concerns">
+          <li>institutional memory</li>
+          <li>authorization</li>
+          <li>delegation</li>
+          <li>responsibility</li>
+          <li>intellectual property</li>
+          <li>persistent context</li>
+          <li>vendor dependency</li>
+          <li>practical control</li>
+          <li>portability</li>
+          <li>contestability</li>
+          <li>representation</li>
+        </ul>
+        <div class="implications-close">
+          <p>
+            These are overlapping problems of system design, institutional design,
+            human agency, authority, and responsibility—not merely downstream policy issues.
+          </p>
+          <a class="cta-link" href="/research/institutional-implications/">
+            Explore institutional implications <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 </Layout>
 
@@ -1975,6 +2013,157 @@ import Layout from '../layouts/Layout.astro';
     .inquiry-optional {
       max-width: 22rem;
       margin: 1.25rem 0 0 1rem;
+    }
+  }
+
+  .institutional-implications {
+    background: var(--color-plum);
+    color: var(--color-ivory);
+  }
+
+  .implications-inner {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(1rem, 2.2vw, 2rem);
+    padding-block: clamp(6rem, 11vw, 10rem);
+  }
+
+  .implications-eyebrow {
+    grid-column: 1 / span 3;
+    padding-top: 0.65rem;
+    color: #ded4c3;
+  }
+
+  .implications-inner h2 {
+    grid-column: 4 / -1;
+    max-width: 14em;
+    margin: 0;
+    color: var(--color-ivory);
+    font-family: var(--font-serif);
+    font-size: clamp(2.7rem, 2rem + 2.8vw, 5.3rem);
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+    text-wrap: balance;
+  }
+
+  .implications-question {
+    grid-column: 4 / span 7;
+    margin: clamp(3rem, 5vw, 4.5rem) 0 0;
+    border-left: 2px solid var(--color-bronze);
+    padding-left: clamp(1.25rem, 2.5vw, 2rem);
+    color: var(--color-ivory);
+    font-family: var(--font-serif);
+    font-size: clamp(1.45rem, 1.15rem + 0.8vw, 2rem);
+    line-height: 1.45;
+  }
+
+  .implications-field {
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: clamp(3.5rem, 7vw, 6rem) 0 0;
+    border-top: 1px solid color-mix(in srgb, var(--color-ivory) 28%, transparent);
+    padding: 0;
+    list-style: none;
+  }
+
+  .implications-field li {
+    border-bottom: 1px solid color-mix(in srgb, var(--color-ivory) 28%, transparent);
+    padding: 1.15rem 1rem 1.15rem 0;
+    color: #f0ebe1;
+    font-family: var(--font-serif);
+    font-size: clamp(1.05rem, 0.95rem + 0.25vw, 1.25rem);
+    line-height: 1.4;
+  }
+
+  .implications-field li:not(:nth-child(4n + 1)) {
+    padding-left: 1rem;
+  }
+
+  .implications-close {
+    grid-column: 4 / span 7;
+    margin-top: clamp(3.5rem, 6vw, 5rem);
+  }
+
+  .implications-close p {
+    margin-bottom: 1.5rem;
+    color: #f0ebe1;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .institutional-implications .cta-link {
+    color: var(--color-ivory);
+  }
+
+  .institutional-implications .cta-link:hover {
+    color: #ded4c3;
+  }
+
+  .institutional-implications .cta-link:focus-visible {
+    outline-color: var(--color-ivory);
+  }
+
+  @media (max-width: 50rem) {
+    .implications-inner {
+      display: block;
+    }
+
+    .implications-eyebrow {
+      padding-top: 0;
+    }
+
+    .implications-inner h2 {
+      margin-top: 1.5rem;
+    }
+
+    .implications-question {
+      max-width: 34rem;
+    }
+
+    .implications-field {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .implications-field li:not(:nth-child(4n + 1)) {
+      padding-left: 0;
+    }
+
+    .implications-field li:nth-child(even) {
+      padding-left: 1rem;
+    }
+
+    .implications-close {
+      max-width: 37rem;
+    }
+  }
+
+  @media (max-width: 38rem) {
+    .implications-inner {
+      padding-block: 5.5rem 6rem;
+    }
+
+    .implications-inner h2 {
+      font-size: clamp(2.35rem, 11vw, 3.2rem);
+    }
+
+    .implications-question {
+      margin-top: 2.75rem;
+      font-size: 1.35rem;
+    }
+
+    .implications-field {
+      grid-template-columns: 1fr;
+      margin-top: 3.5rem;
+    }
+
+    .implications-field li:nth-child(even) {
+      padding-left: 0;
+    }
+
+    .implications-close {
+      margin-top: 3.5rem;
     }
   }
 </style>
