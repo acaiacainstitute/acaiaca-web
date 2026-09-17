@@ -319,12 +319,6 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
         <h2 id="research-areas-title">Where Acaiaca’s questions are beginning to cluster.</h2>
         <div class="research-areas-scope">
           <p>These are current clusters of inquiry, not fixed departments or settled programs.</p>
-          <p>
-            They may merge, divide, narrow, adopt established disciplinary names,
-            remain informal, or disappear as the work develops. The Research Agenda
-            currently treats them as emerging or candidate research programs whose
-            status must be earned through accumulated inquiry.
-          </p>
         </div>
       </header>
 
@@ -418,15 +412,6 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
             Under what conditions can artificial assistance improve human judgment
             performance without materially reducing practical agency?
           </p>
-          <div class="motion-notes">
-            <p>This corresponds to Research Agenda proposition P8, currently Proposed.</p>
-            <p>
-              The Intellectual Landscape characterizes this as a genuinely open and
-              high-value question: performance improvement has substantial adjacent
-              evidence, while preservation of practical agency remains less
-              standardized and may require longitudinal study.
-            </p>
-          </div>
         </article>
 
         <article class="motion-object motion-construct" aria-labelledby="persistent-state-title">
@@ -439,13 +424,6 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
             and policies, adaptive state, provenance, and relational state together
             reveal governance problems that are missed when those layers are treated separately?
           </p>
-          <div class="motion-notes">
-            <p>
-              Persistent Agentic State remains a provisional layered umbrella within
-              Digital Sovereignty rather than an independent research program merely
-              because it is important.
-            </p>
-          </div>
         </article>
 
         <article class="motion-object" aria-labelledby="constraint-architecture-title">
@@ -458,16 +436,6 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
             explicitly without collapsing important distinctions or introducing excessive
             rigidity, cognitive burden, or false precision?
           </p>
-          <div class="motion-notes">
-            <p>
-              Constraint Architecture remains a provisional representational synthesis
-              under comparative evaluation rather than a claimed novel general decision method.
-            </p>
-            <p>
-              Its continued value depends on whether it complements or improves upon
-              strong established approaches without creating false precision or unnecessary rigidity.
-            </p>
-          </div>
         </article>
       </div>
 
@@ -525,23 +493,6 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
             Acaiaca Labs brings questions, premises, propositions, models, and
             prototypes into contact with evidence and conditions capable of changing Acaiaca’s view.
           </p>
-          <div class="works-methods">
-            <p>Testing may include:</p>
-            <ul>
-              <li>literature comparison;</li>
-              <li>conceptual analysis;</li>
-              <li>experiments;</li>
-              <li>prototypes;</li>
-              <li>simulations;</li>
-              <li>bounded research environments;</li>
-              <li>evaluation frameworks;</li>
-              <li>experimental software;</li>
-              <li>field inquiry;</li>
-              <li>structured observation;</li>
-              <li>replication;</li>
-              <li>case analysis.</li>
-            </ul>
-          </div>
           <p class="works-emphasis">Labs may build to learn.</p>
           <p>A prototype does not become a product merely because it works.</p>
           <a class="cta-link" href="/labs/">
@@ -736,7 +687,6 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
 
 </Layout>
 <style>
-  /* Package A: compact, continuous composition; all accepted copy remains visible. */
   main { font-size: 0.94rem; line-height: 1.45; }
   h1, h2, h3, h4 { font-weight: 400; }
   h2 { margin: 0.35rem 0 0.8rem; font-family: var(--font-serif); font-size: clamp(1.75rem, 2.5vw, 2.35rem); line-height: 1.1; letter-spacing: -0.025em; }
@@ -784,7 +734,7 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
   .principle-list p { margin: 0; color: var(--color-muted); font-size: 0.86rem; line-height: 1.4; }
   .principles-link { position: absolute; right: 0; top: 2rem; max-width: 21rem; }
   .judgment, .research-evolves { background: #ebece3; box-shadow: 0 0 0 100vmax #ebece3; clip-path: inset(0 -100vmax); }
-  .judgment { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1.2rem 4rem; padding-block: 2rem; }
+  .judgment { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1.2rem 4rem; padding-block: 3.25rem; }
   .judgment-intro h2 { font-size: 2.6rem; }
   .judgment-definition { font-family: var(--font-serif); font-size: 1.2rem; line-height: 1.35; }
   .judgment-scope { color: var(--color-muted); font-size: 0.87rem; }
@@ -805,7 +755,8 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
   .judgment-boundaries .cta-link { padding-bottom: 0; }
   .research-areas { position: relative; }
   .research-areas-intro h2 { padding-right: 17rem; }
-  .research-areas-scope { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; font-size: 0.8rem; color: var(--color-muted); margin-bottom: 0.7rem; }
+  .research-areas-scope { max-width: 34rem; font-size: 0.8rem; color: var(--color-muted); margin-bottom: 0.7rem; }
+  .research-areas-scope p { margin-bottom: 0; }
   .research-landscape { display: grid; grid-template-columns: 1.05fr 1fr 1fr; gap: 0 1.5rem; background: #ffffff70; border-radius: 4px; padding: 1.2rem 1.4rem; }
   .research-area-pair { display: contents; }
   .research-area { padding: 0.25rem 0 0.4rem 1.5rem; border-left: 1px solid var(--color-bronze); }
@@ -825,16 +776,15 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
   .motion-intro { display: flex; flex-direction: column; }
   .motion-intro h2 { order: 1; padding-right: 12rem; }
   .motion-selection { order: 2; font-size: 0.78rem; color: #ded4c3; margin: 0 0 0.9rem; }
-  .motion-objects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+  .motion-objects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; align-items: start; }
   .motion-object { border-left: 1px solid #b1a08b; padding-left: 1.4rem; }
   .motion-identity { display: flex; flex-direction: column; }
   .motion-metadata { order: -1; font-size: 0.69rem; letter-spacing: 0.06em; color: #ded4c3; margin-bottom: 0.45rem; }
   .motion-identity h3 { font-family: var(--font-serif); font-size: 1.22rem; line-height: 1.2; margin: 0 0 0.45rem; }
-  .motion-question { font-size: 0.95rem; line-height: 1.4; }
-  .motion-notes { color: #ded4c3; font-size: 0.8rem; line-height: 1.45; }
+  .motion-question { margin-bottom: 0; font-size: 0.95rem; line-height: 1.4; }
   .motion-link { position: absolute; right: 0; top: 1.8rem; }
   .works-framing { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; font-size: 0.82rem; color: var(--color-muted); }
-  .works-functions { display: grid; grid-template-columns: 1fr 1.2fr 0.9fr; gap: 2rem; margin-top: 0.7rem; align-items: start; }
+  .works-functions { display: grid; grid-template-columns: 1fr 1fr 0.9fr; gap: 2rem; margin-top: 0.7rem; align-items: start; }
   .works-functions > section { border-top: 1px solid var(--color-bronze); padding-top: 0.7rem; }
   .works-functions > section + section { border-left: 1px solid var(--color-bronze); padding-left: 1.5rem; }
   .works-functions h3 { margin: 0 0 0.3rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
@@ -844,10 +794,6 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
   .works-functions .works-metadata { margin: 0.35rem 0 0.7rem; font-size: 0.73rem; color: var(--color-green); }
   .works-functions .works-emphasis { font-family: var(--font-serif); font-size: 1.05rem; }
   .works-home { border-left: 1px solid var(--color-bronze); padding-left: 0.7rem; }
-  .works-methods { margin-block: 0.7rem; color: var(--color-muted); }
-  .works-methods p { margin-bottom: 0.35rem; }
-  .works-methods ul { columns: 2; column-gap: 1.1rem; padding-left: 1rem; margin: 0; font-size: 0.76rem; }
-  .works-methods li { break-inside: avoid; margin-bottom: 0.12rem; }
   .works-functions .works-systems { border-top-color: var(--color-rule); color: var(--color-muted); }
   .works-systems h4 { font-size: 1.25rem; }
   .works-systems .works-metadata { display: inline-block; border-bottom: 1px solid var(--color-bronze); }
@@ -868,7 +814,7 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
   .inquiry-optional p { margin: 0; font-size: 0.7rem; line-height: 1.3; }
   .inquiry-optional .inquiry-condition { margin-bottom: 0.2rem; }
   .inquiry-return { display: inline-flex; align-items: center; min-height: 2.75rem; margin-top: 0.6rem; font-size: 0.72rem; line-height: 1.2; color: var(--color-green); }
-  .institutional-implications { position: relative; isolation: isolate; overflow: hidden; background: var(--color-plum); color: var(--color-ivory); }
+  .institutional-implications { position: relative; isolation: isolate; overflow: hidden; margin-top: clamp(2.5rem, 4vw, 3.75rem); background: var(--color-plum); color: var(--color-ivory); }
   .implications-media { position: absolute; z-index: -2; inset: 0; }
   .implications-media img { width: 100%; height: 100%; object-fit: cover; object-position: 56% 57%; }
   .institutional-implications::after { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, color-mix(in srgb, var(--color-plum) 98%, transparent) 0%, color-mix(in srgb, var(--color-plum) 94%, transparent) 43%, color-mix(in srgb, var(--color-plum) 48%, transparent) 75%, color-mix(in srgb, var(--color-charcoal) 42%, transparent) 100%); content: ''; }
@@ -882,14 +828,19 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
   .implications-close p { max-width: 50rem; margin: 0; font-size: 0.83rem; color: #ded4c3; }
   .institutional-implications .cta-link { color: var(--color-ivory); flex-shrink: 0; }
   .continue-question { display: grid; grid-template-columns: 1fr 3fr; gap: 0.5rem 2rem; }
-  .branch-field { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem 1.6rem; }
-  .branch { border-left: 1px solid var(--color-bronze); padding-left: 1rem; }
+  .branch-field { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1rem 1.3rem; align-items: start; }
+  .branch { position: relative; border-left: 1px solid var(--color-bronze); padding-left: 1rem; }
+  .branch:nth-child(1) { grid-column: 1 / span 2; }
+  .branch:nth-child(2) { grid-column: 3 / span 2; margin-top: 2rem; }
+  .branch:nth-child(3) { grid-column: 5 / span 2; margin-top: 0.65rem; }
+  .branch:nth-child(4) { grid-column: 2 / span 2; margin-top: 0.4rem; }
+  .branch:nth-child(5) { grid-column: 4 / span 2; margin-top: 2.4rem; }
   .branch h3 { font-size: 0.87rem; margin: 0 0 0.35rem; line-height: 1.35; }
   .branch h3 a { display: inline-block; padding-block: 0.25rem; }
   .branch h3 span { color: var(--color-green); }
   .branch p { font-size: 0.8rem; color: var(--color-muted); margin: 0; }
-  .branch-paths { grid-column: 2; }
-  .about-acaiaca { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem 3rem; }
+  .branch-paths { grid-column: 2; margin-top: 0.6rem; }
+  .about-acaiaca { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem 3rem; padding-top: clamp(3rem, 5vw, 4.5rem); }
   .about-acaiaca h2 { max-width: 26em; }
   .about-copy { margin-top: 1.2rem; color: var(--color-muted); }
   .about-pathways { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0.2rem 1.5rem; }
@@ -945,14 +896,18 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
     .society-area { grid-column: 2; }
     .motion-objects { grid-template-columns: 1fr; gap: 1rem; }
     .motion-object { padding-bottom: 0.25rem; }
-    .motion-notes { font-size: 0.87rem; }
     .works-functions { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
     .works-functions .works-systems { grid-column: 1 / -1; max-width: 36rem; }
     .implications-inner { grid-template-columns: 1fr; gap: 0.7rem; }
     .institutional-implications::after { background: color-mix(in srgb, var(--color-plum) 78%, transparent); }
     .implications-inner h2, .implications-question { grid-column: 1; grid-row: auto; }
     .implications-close { display: block; }
-    .branch-field { grid-template-columns: 1fr 1fr; }
+    .branch-field { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .branch:nth-child(1) { grid-column: 1 / span 2; }
+    .branch:nth-child(2) { grid-column: 3 / span 2; margin-top: 1.8rem; }
+    .branch:nth-child(3) { grid-column: 1 / span 3; margin: 0.3rem 0 0 1.5rem; }
+    .branch:nth-child(4) { grid-column: 2 / span 2; margin-top: 1rem; }
+    .branch:nth-child(5) { grid-column: 3 / span 2; margin-top: 1.8rem; }
     .about-acaiaca { grid-template-columns: 1fr; gap: 0.3rem; }
     .about-copy { margin-top: 0; }
     .footer-inner { grid-template-columns: 1fr; }
@@ -963,7 +918,7 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
     .hero-media { height: 11.5rem; margin-top: 1rem; }
     .hero-media img { object-position: 66% 52%; }
     .principles, .research-areas, .how-works, .continue-question, .about-acaiaca { padding-block: 1.8rem; }
-    .principles-distinction dl, .principles-groups, .judgment-boundaries, .research-landscape, .works-functions, .branch-field { display: block; }
+    .principles-distinction dl, .principles-groups, .judgment-boundaries, .research-landscape, .works-functions { display: block; }
     .commitment-group { margin-top: 1.5rem; border-left: 0; border-top: 1px solid var(--color-bronze); padding: 1rem 0 0; }
     .principles-distinction dl div + div { margin-top: 0.5rem; }
     .principle-list li { padding-block: 0.55rem; gap: 0.35rem; }
@@ -980,7 +935,13 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
     .agency-area h3 { font-size: 1.8rem; }
     .works-functions > section + section { border-left: 0; padding-left: 0; margin-top: 1.4rem; }
     .works-functions .works-systems { margin-left: 1rem; padding-left: 1rem; border-left: var(--rule); }
-    .works-methods ul { font-size: 0.85rem; }
+    .branch-field { display: grid; grid-template-columns: 1fr; gap: 0; border-left: 1px solid color-mix(in srgb, var(--color-bronze) 60%, transparent); padding-left: 0.7rem; }
+    .branch::before { position: absolute; top: 1rem; left: -0.7rem; width: 0.7rem; border-top: 1px solid color-mix(in srgb, var(--color-bronze) 60%, transparent); content: ''; }
+    .branch:nth-child(1) { grid-column: 1; width: 92%; margin: 0; }
+    .branch:nth-child(2) { grid-column: 1; width: 88%; margin: 1.35rem 0 0 8%; }
+    .branch:nth-child(3) { grid-column: 1; width: 96%; margin: 1.35rem 0 0 2%; }
+    .branch:nth-child(4) { grid-column: 1; width: 86%; margin: 1.35rem 0 0 12%; }
+    .branch:nth-child(5) { grid-column: 1; width: 94%; margin: 1.35rem 0 0 4%; }
     .inquiry-diagram { padding: 0.5rem 0 0.5rem 1.2rem; }
     .inquiry-loop { display: flex; flex-direction: column; gap: 0.8rem; padding-left: 1.1rem; border-left: 1px solid var(--color-bronze); }
     .inquiry-loop::before { content: none; }
