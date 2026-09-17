@@ -1,0 +1,103 @@
+<header class="site-header">
+  <div class="page-shell header-inner">
+    <a class="wordmark" href="/" aria-label="Acaiaca Institute home">
+      <span>Acaiaca</span>
+      <span>Institute</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="/ideas/">Ideas</a>
+      <a href="/research/">Research</a>
+      <a href="/projects/">Projects</a>
+      <a href="/about/">About</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: var(--rule);
+  }
+
+  .header-inner {
+    display: flex;
+    min-height: 7.25rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .wordmark {
+    display: inline-flex;
+    min-width: 8.5rem;
+    min-height: 2.75rem;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-charcoal);
+    font-size: 0.76rem;
+    font-weight: 750;
+    letter-spacing: 0.22em;
+    line-height: 1.25;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .wordmark span:last-child {
+    color: var(--color-green);
+    font-size: 0.69rem;
+    letter-spacing: 0.235em;
+  }
+
+  .primary-nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2.5vw, 2.5rem);
+  }
+
+  .primary-nav a {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    font-size: 0.88rem;
+    font-weight: 550;
+    text-decoration: none;
+  }
+
+  .primary-nav a:hover {
+    color: var(--color-plum);
+  }
+
+  @media (max-width: 42rem) {
+    .header-inner {
+      min-height: 5.5rem;
+      align-items: center;
+      flex-direction: row;
+      gap: 1rem;
+      padding-block: 0.9rem;
+    }
+
+    .wordmark {
+      min-width: auto;
+      flex: 0 0 auto;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+    }
+
+    .wordmark span:last-child {
+      font-size: 0.61rem;
+      letter-spacing: 0.21em;
+    }
+
+    .primary-nav {
+      width: auto;
+      flex: 1 1 auto;
+      justify-content: flex-end;
+      gap: clamp(0.55rem, 3vw, 1rem);
+    }
+
+    .primary-nav a {
+      min-height: 2.75rem;
+      font-size: 0.74rem;
+    }
+  }
+</style>

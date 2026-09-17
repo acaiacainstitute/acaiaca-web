@@ -1,0 +1,127 @@
+:root {
+  --color-ivory: #f6f3ec;
+  --color-charcoal: #252421;
+  --color-plum: #4a3548;
+  --color-green: #59685a;
+  --color-bronze: #9a835d;
+  --color-rule: color-mix(in srgb, var(--color-charcoal) 22%, transparent);
+  --color-muted: color-mix(in srgb, var(--color-charcoal) 72%, var(--color-ivory));
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: ui-serif, Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+
+  --page-width: 82rem;
+  --text-width: 42rem;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --section-space: clamp(5rem, 10vw, 9rem);
+  --rule: 1px solid var(--color-rule);
+
+  --step--1: clamp(0.78rem, 0.74rem + 0.12vw, 0.86rem);
+  --step-0: clamp(1rem, 0.96rem + 0.16vw, 1.1rem);
+  --step-1: clamp(1.14rem, 1.05rem + 0.34vw, 1.38rem);
+  --step-4: clamp(2.7rem, 1.85rem + 4.1vw, 6.35rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-size: var(--step-0);
+  line-height: 1.68;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-block-start: 0;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 0.075em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-color: var(--color-bronze);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-plum);
+  outline-offset: 4px;
+}
+
+.page-shell {
+  width: min(var(--page-width), calc(100% - (2 * var(--gutter))));
+  margin-inline: auto;
+}
+
+.readable {
+  max-width: var(--text-width);
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-plum);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.cta-link {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding-block: 0.45rem;
+  color: var(--color-plum);
+  font-size: 0.96rem;
+  font-weight: 650;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.cta-link:hover {
+  color: var(--color-green);
+}
+
+.thin-rule {
+  border-top: var(--rule);
+}
+

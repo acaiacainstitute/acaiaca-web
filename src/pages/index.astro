@@ -1,59 +1,689 @@
 ---
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-	title="Acaiaca Institute"
-	description="Acaiaca Institute exists to understand, preserve, and amplify human judgment in an AI-augmented world."
+  title="Acaiaca Institute — Human Judgment in an AI-Augmented World"
+  description="Acaiaca Institute studies what human judgment requires and what changes when increasingly capable artificial systems participate in human activity."
+  canonicalPath="/"
 >
-	<main class="homepage">
-		<section class="placeholder">
-			<p class="eyebrow">Acaiaca Institute</p>
+  <Header />
 
-			<h1>
-				Understanding, preserving, and amplifying human judgment in an
-				AI-augmented world.
-			</h1>
+  <main>
+    <section class="hero page-shell" aria-labelledby="hero-title">
+      <p class="eyebrow hero-eyebrow">Human judgment in an AI-augmented world</p>
 
-			<p class="lede">
-				The implementation foundation is in place.
-			</p>
-		</section>
-	</main>
+      <h1 id="hero-title">
+        We study what human judgment requires—and what changes when increasingly capable systems participate in it.
+      </h1>
+
+      <div class="hero-definition">
+        <p>
+          Acaiaca Institute exists to understand, preserve, and amplify human judgment in an AI-augmented world. Its research examines how judgment, agency, authority, participation, and responsibility are affected as artificial systems participate more deeply in human activity.
+        </p>
+      </div>
+
+      <div class="hero-bridge">
+        <p>
+          As AI systems increasingly remember, recommend, decide, and act, people face new questions about what should remain human, what can be shared or delegated, who possesses authority, and who remains responsible for what follows. Acaiaca investigates those questions rather than assuming their answers.
+        </p>
+
+        <div class="hero-actions" aria-label="Homepage pathways">
+          <a class="cta-link" href="/research/">
+            Explore the research <span aria-hidden="true">→</span>
+          </a>
+          <a class="secondary-link" href="/about/">
+            What is Acaiaca? <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <p class="hero-posture">
+        Inquiry before doctrine. Evidence before certainty. Operationalization only where the work earns it.
+      </p>
+    </section>
+
+    <section
+      class="principles page-shell"
+      aria-labelledby="principles-title"
+    >
+      <header class="principles-intro">
+        <p class="eyebrow">Research principles &amp; normative commitments</p>
+
+        <h2 id="principles-title">
+          What constrains how we pursue the work.
+        </h2>
+
+        <div class="principles-distinction">
+          <p>Acaiaca distinguishes between:</p>
+
+          <dl>
+            <div>
+              <dt>Research Principles</dt>
+              <dd>disciplines governing the integrity of inquiry</dd>
+            </div>
+
+            <div>
+              <dt>Normative Commitments</dt>
+              <dd>
+                institutional constraints Acaiaca chooses to uphold while pursuing,
+                interpreting, communicating, testing, and applying knowledge
+              </dd>
+            </div>
+          </dl>
+
+          <p class="principles-clarification">
+            These are not research findings. They are declared constraints Acaiaca places upon itself.
+          </p>
+        </div>
+      </header>
+
+      <div class="principles-groups">
+        <section
+          class="principle-group"
+          aria-labelledby="research-principles-title"
+        >
+          <header class="group-header">
+            <p class="group-index" aria-hidden="true">01</p>
+
+            <div>
+              <h3 id="research-principles-title">Research Principles</h3>
+              <p>Disciplines governing the integrity of inquiry.</p>
+            </div>
+          </header>
+
+          <ol class="principle-list">
+            <li>
+              <span class="item-index" aria-hidden="true">01</span>
+
+              <div>
+                <h4>Inquiry can change our view</h4>
+                <p>
+                  Important claims should remain exposed to evidence, reasoning,
+                  criticism, comparison, and counterexample capable of materially
+                  changing them.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <span class="item-index" aria-hidden="true">02</span>
+
+              <div>
+                <h4>Claims should not exceed their evidence</h4>
+                <p>
+                  Questions, propositions, observations, experiments, findings,
+                  and institutional positions should be represented at the strength
+                  their evidence supports.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <span class="item-index" aria-hidden="true">03</span>
+
+              <div>
+                <h4>
+                  Formal human presence does not by itself establish meaningful
+                  human involvement
+                </h4>
+                <p>
+                  A human approval step or nominal oversight is not, by itself,
+                  evidence of meaningful understanding, participation, practical
+                  control, authority, or responsibility.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section
+          class="principle-group commitment-group"
+          aria-labelledby="normative-commitments-title"
+        >
+          <header class="group-header">
+            <p class="group-index" aria-hidden="true">02</p>
+
+            <div>
+              <h3 id="normative-commitments-title">Normative Commitments</h3>
+              <p>
+                Institutional constraints Acaiaca chooses to uphold while pursuing
+                the work.
+              </p>
+            </div>
+          </header>
+
+          <ol class="principle-list">
+            <li>
+              <span class="item-index" aria-hidden="true">01</span>
+
+              <div>
+                <h4>Capability does not create legitimate authority</h4>
+                <p>
+                  Greater intelligence, accuracy, speed, expertise, or technical
+                  capability does not by itself establish a right to decide or act.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <span class="item-index" aria-hidden="true">02</span>
+
+              <div>
+                <h4>
+                  Inquiry remains independent of commercial and institutional
+                  convenience
+                </h4>
+                <p>
+                  Acaiaca’s reputation, continuity, or potential commercial
+                  interests should not determine research conclusions in advance.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <span class="item-index" aria-hidden="true">03</span>
+
+              <div>
+                <h4>
+                  Institutional representation should remain truthful and
+                  proportionate
+                </h4>
+                <p>
+                  Acaiaca should represent its evidence, maturity, contribution,
+                  affiliations, participation opportunities, commercial readiness,
+                  and authority without using institutional form or presentation as
+                  a substitute for earned credibility.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </div>
+
+      <div class="principles-link">
+        <a class="cta-link" href="/research/principles/">
+          View all research principles &amp; commitments
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
 </Layout>
 
 <style>
-	.homepage {
-		min-height: 100vh;
-	}
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(1rem, 2.2vw, 2rem);
+    row-gap: 0;
+    padding-block: clamp(4.5rem, 9vw, 8.5rem) clamp(5rem, 9vw, 8rem);
+  }
 
-	.placeholder {
-		width: min(1120px, calc(100% - 48px));
-		margin-inline: auto;
-		padding-block: 160px;
-	}
+  .hero-eyebrow {
+    grid-column: 1 / span 3;
+    align-self: start;
+    padding-top: 0.65rem;
+  }
 
-	.eyebrow {
-		margin: 0 0 24px;
-		font-size: 0.75rem;
-		font-weight: 600;
-		letter-spacing: 0.18em;
-		text-transform: uppercase;
-	}
+  h1 {
+    grid-column: 4 / -1;
+    max-width: 11.25em;
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: var(--step-4);
+    font-weight: 400;
+    letter-spacing: -0.038em;
+    line-height: 0.99;
+    text-wrap: balance;
+  }
 
-	h1 {
-		max-width: 900px;
-		margin: 0;
-		font-size: clamp(3rem, 7vw, 6.5rem);
-		font-weight: 400;
-		line-height: 0.98;
-		letter-spacing: -0.045em;
-	}
+  .hero-definition,
+  .hero-bridge {
+    margin-top: clamp(4rem, 8vw, 7rem);
+    border-top: var(--rule);
+    padding-top: 1.35rem;
+  }
 
-	.lede {
-		max-width: 640px;
-		margin: 48px 0 0;
-		font-size: 1.125rem;
-		line-height: 1.6;
-	}
+  .hero-definition {
+    grid-column: 4 / span 4;
+  }
+
+  .hero-bridge {
+    grid-column: 9 / -1;
+  }
+
+  .hero-definition p,
+  .hero-bridge p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: clamp(0.98rem, 0.92rem + 0.16vw, 1.08rem);
+    line-height: 1.72;
+  }
+
+  .hero-definition p {
+    color: var(--color-charcoal);
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem 1.6rem;
+    margin-top: 2rem;
+  }
+
+  .cta-link span,
+  .secondary-link span {
+    margin-left: 0.28rem;
+  }
+
+  .secondary-link {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    padding-block: 0.45rem;
+    color: var(--color-muted);
+    font-size: 0.92rem;
+    font-weight: 550;
+    text-decoration: none;
+  }
+
+  .secondary-link:hover {
+    color: var(--color-plum);
+  }
+
+  .hero-posture {
+    grid-column: 4 / -1;
+    margin: clamp(4rem, 8vw, 7rem) 0 0;
+    border-left: 2px solid var(--color-bronze);
+    padding: 0.1rem 0 0.1rem 1.2rem;
+    color: var(--color-green);
+    font-family: var(--font-serif);
+    font-size: clamp(1.05rem, 0.96rem + 0.25vw, 1.24rem);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .principles {
+    border-top: var(--rule);
+    padding-block: clamp(5.5rem, 10vw, 9rem);
+  }
+
+  .principles-intro {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(1rem, 2.2vw, 2rem);
+  }
+
+  .principles-intro > .eyebrow {
+    grid-column: 1 / span 3;
+    align-self: start;
+    padding-top: 0.55rem;
+  }
+
+  .principles-intro h2 {
+    grid-column: 4 / span 6;
+    max-width: 8.5em;
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 1.9rem + 2.5vw, 4.8rem);
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+
+  .principles-distinction {
+    grid-column: 9 / -1;
+    padding-top: 0.5rem;
+  }
+
+  .principles-distinction > p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .principles-distinction dl {
+    display: grid;
+    gap: 1.25rem;
+    margin: 1.15rem 0 1.3rem;
+  }
+
+  .principles-distinction dl div {
+    border-top: var(--rule);
+    padding-top: 0.85rem;
+  }
+
+  .principles-distinction dt {
+    color: var(--color-charcoal);
+    font-family: var(--font-serif);
+    font-size: 1.12rem;
+    line-height: 1.25;
+  }
+
+  .principles-distinction dd {
+    margin: 0.3rem 0 0;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .principles-clarification {
+    color: var(--color-charcoal) !important;
+    font-weight: 550;
+  }
+
+  .principles-groups {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(1rem, 2.2vw, 2rem);
+    margin-top: clamp(4.5rem, 8vw, 7rem);
+  }
+
+  .principle-group {
+    grid-column: 1 / span 5;
+  }
+
+  .commitment-group {
+    grid-column: 7 / -1;
+  }
+
+  .group-header {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 1rem;
+    min-height: 7rem;
+    border-top: 2px solid var(--color-plum);
+    padding-top: 1rem;
+  }
+
+  .commitment-group .group-header {
+    border-top-color: var(--color-green);
+  }
+
+  .group-index {
+    margin: 0;
+    color: var(--color-bronze);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 1.35;
+  }
+
+  .group-header h3 {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 1.4rem + 0.7vw, 2.25rem);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 1.08;
+  }
+
+  .group-header div > p {
+    max-width: 28rem;
+    margin: 0.55rem 0 0;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .principle-list {
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .principle-list li {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 1rem;
+    border-top: var(--rule);
+    padding-block: 1.65rem;
+  }
+
+  .principle-list li:last-child {
+    border-bottom: var(--rule);
+  }
+
+  .item-index {
+    padding-top: 0.22rem;
+    color: var(--color-muted);
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.1em;
+  }
+
+  .principle-list h4 {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: clamp(1.18rem, 1.08rem + 0.28vw, 1.42rem);
+    font-weight: 400;
+    line-height: 1.25;
+  }
+
+  .principle-list p {
+    margin: 0.65rem 0 0;
+    color: var(--color-muted);
+    font-size: 0.94rem;
+    line-height: 1.67;
+  }
+
+  .principles-link {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(1rem, 2.2vw, 2rem);
+    margin-top: 2.5rem;
+  }
+
+  .principles-link .cta-link {
+    grid-column: 7 / -1;
+    justify-self: start;
+  }
+
+  @media (max-width: 70rem) {
+    .hero-eyebrow {
+      grid-column: 1 / span 3;
+    }
+
+    h1 {
+      grid-column: 4 / -1;
+      font-size: clamp(2.8rem, 6vw, 5.1rem);
+    }
+
+    .hero-definition {
+      grid-column: 4 / span 4;
+    }
+
+    .hero-bridge {
+      grid-column: 8 / -1;
+    }
+
+    .hero-posture {
+      grid-column: 4 / -1;
+    }
+
+    .principles-intro h2 {
+      grid-column: 4 / span 5;
+    }
+
+    .principles-distinction {
+      grid-column: 9 / -1;
+    }
+  }
+
+  @media (max-width: 50rem) {
+    .hero {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      padding-block: 4.25rem 5.5rem;
+    }
+
+    .hero-eyebrow {
+      grid-column: 1 / -1;
+      padding-top: 0;
+    }
+
+    h1 {
+      grid-column: 1 / -1;
+      margin-top: 1.6rem;
+      max-width: 12em;
+      font-size: clamp(2.7rem, 9vw, 4.4rem);
+    }
+
+    .hero-definition,
+    .hero-bridge {
+      margin-top: 3.8rem;
+    }
+
+    .hero-definition {
+      grid-column: 1 / span 3;
+    }
+
+    .hero-bridge {
+      grid-column: 4 / -1;
+    }
+
+    .hero-posture {
+      grid-column: 1 / -1;
+      margin-top: 4rem;
+    }
+
+    .principles-intro {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .principles-intro > .eyebrow {
+      grid-column: 1 / -1;
+      padding-top: 0;
+    }
+
+    .principles-intro h2 {
+      grid-column: 1 / span 4;
+      margin-top: 1.5rem;
+    }
+
+    .principles-distinction {
+      grid-column: 4 / -1;
+      margin-top: 2.5rem;
+    }
+
+    .principles-groups {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .principle-group {
+      grid-column: 1 / span 3;
+    }
+
+    .commitment-group {
+      grid-column: 4 / -1;
+    }
+
+    .principles-link {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .principles-link .cta-link {
+      grid-column: 4 / -1;
+    }
+  }
+
+  @media (max-width: 38rem) {
+    .hero {
+      display: block;
+      padding-block: 3.7rem 4.8rem;
+    }
+
+    h1 {
+      margin-top: 1.4rem;
+      font-size: clamp(2.55rem, 12.5vw, 3.75rem);
+      line-height: 1.01;
+    }
+
+    .hero-definition,
+    .hero-bridge {
+      margin-top: 3.5rem;
+    }
+
+    .hero-definition {
+      max-width: 35rem;
+    }
+
+    .hero-bridge {
+      max-width: 37rem;
+    }
+
+    .hero-actions {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.15rem;
+      margin-top: 1.6rem;
+    }
+
+    .hero-posture {
+      margin-top: 3.8rem;
+    }
+
+    .principles {
+      padding-block: 5rem 5.75rem;
+    }
+
+    .principles-intro {
+      display: block;
+    }
+
+    .principles-intro h2 {
+      margin-top: 1.35rem;
+      max-width: 9em;
+      font-size: clamp(2.45rem, 11vw, 3.5rem);
+    }
+
+    .principles-distinction {
+      margin-top: 2.5rem;
+      padding-top: 0;
+    }
+
+    .principles-distinction dl {
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .principles-groups {
+      display: block;
+      margin-top: 4.5rem;
+    }
+
+    .principle-group,
+    .commitment-group {
+      width: 100%;
+    }
+
+    .commitment-group {
+      margin-top: 4.75rem;
+    }
+
+    .group-header {
+      min-height: auto;
+      grid-template-columns: 2rem 1fr;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .principle-list li {
+      grid-template-columns: 2rem 1fr;
+      padding-block: 1.5rem;
+    }
+
+    .principle-list p {
+      font-size: 0.92rem;
+    }
+
+    .principles-link {
+      display: block;
+      margin-top: 2rem;
+    }
+  }
 </style>
