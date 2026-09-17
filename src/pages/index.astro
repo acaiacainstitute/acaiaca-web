@@ -564,6 +564,48 @@ import Layout from '../layouts/Layout.astro';
         </section>
       </div>
     </section>
+
+    <section class="research-evolves page-shell" aria-labelledby="research-evolves-title">
+      <header class="evolves-intro">
+        <p class="eyebrow">How the Research Evolves</p>
+        <h2 id="research-evolves-title">Acaiaca expects to change its mind.</h2>
+      </header>
+
+      <div class="inquiry-diagram">
+        <ol class="inquiry-loop" aria-label="Recursive inquiry sequence">
+          <li>
+            <span class="inquiry-label" id="research-inquiry" tabindex="-1">Inquiry</span>
+          </li>
+          <li>
+            <div class="inquiry-fork">
+              <span class="inquiry-label">Explain / Test</span>
+              <aside class="inquiry-optional" aria-labelledby="optional-operationalize-title">
+                <p class="inquiry-condition">Optional branch</p>
+                <h3 id="optional-operationalize-title">Operationalize</h3>
+                <p>From sufficiently mature work, where warranted.</p>
+              </aside>
+            </div>
+          </li>
+          <li><span class="inquiry-label">Evidence &amp; Observation</span></li>
+          <li><span class="inquiry-label">Compare</span></li>
+          <li><span class="inquiry-label">Revise</span></li>
+          <li>
+            <span class="inquiry-label">Renewed Inquiry <span aria-hidden="true">↺</span></span>
+            <a class="inquiry-return" href="#research-inquiry">Return to Inquiry</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="evolves-principle">
+        <p>
+          No premise or proposition is entitled to survive because effort has
+          already been invested in it. No prototype is entitled to become a product because it works.
+        </p>
+        <a class="cta-link" href="/research/methods/">
+          Methods, evidence &amp; revisions <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
   </main>
 </Layout>
 
@@ -1767,6 +1809,172 @@ import Layout from '../layouts/Layout.astro';
 
     .works-systems {
       margin: 4rem 0 0 1.25rem;
+    }
+  }
+
+  .research-evolves {
+    border-top: var(--rule);
+    padding-block: var(--section-space);
+  }
+
+  .evolves-intro {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(1rem, 2.2vw, 2rem);
+  }
+
+  .evolves-intro > .eyebrow {
+    grid-column: 1 / span 3;
+    padding-top: 0.5rem;
+  }
+
+  .evolves-intro h2 {
+    grid-column: 4 / -1;
+    max-width: 17em;
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: clamp(2.2rem, 1.7rem + 1.8vw, 3.5rem);
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  .inquiry-diagram {
+    max-width: 60rem;
+    margin: clamp(3.5rem, 6vw, 5.5rem) auto 0;
+  }
+
+  .inquiry-loop {
+    position: relative;
+    margin: 0 0 0 1rem;
+    border-left: 1px solid var(--color-bronze);
+    padding: 0 0 0 clamp(2rem, 4vw, 4rem);
+  }
+
+  .inquiry-loop::before {
+    position: absolute;
+    top: -0.15rem;
+    left: -0.3rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-top: 1px solid var(--color-bronze);
+    border-left: 1px solid var(--color-bronze);
+    transform: rotate(45deg);
+    content: '';
+  }
+
+  .inquiry-loop > li {
+    position: relative;
+    padding: 0.6rem 0 2.1rem 0.35rem;
+  }
+
+  .inquiry-loop > li::marker {
+    color: var(--color-muted);
+    font-size: 0.78rem;
+  }
+
+  .inquiry-loop > li + li::before {
+    position: absolute;
+    top: -1.25rem;
+    left: 0.35rem;
+    color: var(--color-bronze);
+    content: '↓' / '';
+    font-size: 1rem;
+  }
+
+  .inquiry-label {
+    display: block;
+    color: var(--color-plum);
+    font-family: var(--font-serif);
+    font-size: clamp(1.4rem, 1.1rem + 0.7vw, 1.85rem);
+    line-height: 1.4;
+  }
+
+  #research-inquiry {
+    scroll-margin-top: 2rem;
+  }
+
+  .inquiry-fork {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    align-items: start;
+    gap: 3rem;
+  }
+
+  .inquiry-optional {
+    border-left: var(--rule);
+    padding-left: 1.25rem;
+    color: var(--color-muted);
+  }
+
+  .inquiry-optional p {
+    max-width: 22em;
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .inquiry-optional .inquiry-condition {
+    margin: 0 0 0.35rem;
+    font-size: 0.8rem;
+  }
+
+  .inquiry-optional h3 {
+    margin: 0;
+    color: var(--color-green);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .inquiry-loop > li:last-child {
+    padding-bottom: 0;
+  }
+
+  .inquiry-return {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid var(--color-bronze);
+    color: var(--color-green);
+    font-size: 0.94rem;
+  }
+
+  .evolves-principle {
+    max-width: 43rem;
+    margin: 3.5rem auto 0;
+    border-top: var(--rule);
+    padding-top: 1.5rem;
+  }
+
+  .evolves-principle p {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 50rem) {
+    .evolves-intro {
+      display: block;
+    }
+
+    .evolves-intro > .eyebrow {
+      padding-top: 0;
+    }
+
+    .evolves-intro h2 {
+      margin-top: 1.5rem;
+    }
+
+    .inquiry-fork {
+      display: block;
+    }
+
+    .inquiry-optional {
+      max-width: 22rem;
+      margin: 1.25rem 0 0 1rem;
     }
   }
 </style>
