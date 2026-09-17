@@ -121,6 +121,46 @@ Treat a dirty working tree as potentially meaningful user work.
 
 Do not use destructive Git operations to restore, reset, or clean the repository unless explicitly instructed.
 
+## External Reference Material
+
+The VS Code workspace may include the Acaiaca Institute knowledge base
+outside this repository.
+
+Files outside the `acaiaca-web` repository may contain canonical,
+governing, or contextual material for implementation tasks.
+
+Treat all external reference material as read-only unless the current task
+explicitly authorizes modification.
+
+Do not:
+
+* edit external reference files;
+* rename external reference files;
+* move external reference files;
+* delete external reference files;
+* create new files in external reference folders;
+* use external reference folders as implementation output locations.
+
+Implementation changes must remain inside the `acaiaca-web` repository unless
+the current task explicitly authorizes otherwise.
+
+When a task identifies specific external documents as authoritative, use those
+documents as governing context for that task.
+
+Do not assume that every document available in the external knowledge base is
+equally authoritative or current.
+
+When multiple external documents appear relevant but conflict, differ in
+version, or leave authority unclear:
+
+1. do not reconcile them autonomously;
+2. identify the conflicting documents or versions;
+3. explain the implementation consequence;
+4. escalate for clarification before relying on one over another.
+
+Broad read access to the Acaiaca Institute knowledge base does not grant broad
+implementation authority.
+
 ## Validation
 
 Before presenting implementation work as complete:
