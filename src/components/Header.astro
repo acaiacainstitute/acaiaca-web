@@ -1,8 +1,16 @@
+---
+import { Image } from 'astro:assets';
+import treeMark from '../assets/brand/acaiaca-tree-mark-black.png';
+---
+
 <header class="site-header">
   <div class="page-shell header-inner">
     <a class="wordmark" href="/" aria-label="Acaiaca Institute home">
-      <span>Acaiaca</span>
-      <span>Institute</span>
+      <Image class="wordmark-tree" src={treeMark} alt="" width={36} height={36} />
+      <span class="wordmark-text">
+        <span>Acaiaca</span>
+        <span>Institute</span>
+      </span>
     </a>
 
     <nav class="primary-nav" aria-label="Primary navigation">
@@ -21,20 +29,21 @@
 
   .header-inner {
     display: flex;
-    min-height: 7.25rem;
+    min-height: 4rem;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
   }
 
   .wordmark {
-    display: inline-flex;
+    display: inline-grid;
+    grid-template-columns: 2.25rem auto;
+    align-items: center;
+    column-gap: 0.7rem;
     min-width: 8.5rem;
     min-height: 2.75rem;
-    flex-direction: column;
-    justify-content: center;
     color: var(--color-charcoal);
-    font-size: 0.76rem;
+    font-size: 1.1rem;
     font-weight: 750;
     letter-spacing: 0.22em;
     line-height: 1.25;
@@ -42,9 +51,20 @@
     text-transform: uppercase;
   }
 
-  .wordmark span:last-child {
+  .wordmark-tree {
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: contain;
+  }
+
+  .wordmark-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wordmark-text span:last-child {
     color: var(--color-green);
-    font-size: 0.69rem;
+    font-size: 0.76rem;
     letter-spacing: 0.235em;
   }
 
@@ -69,21 +89,28 @@
 
   @media (max-width: 42rem) {
     .header-inner {
-      min-height: 5.5rem;
+      min-height: 4.75rem;
       align-items: center;
       flex-direction: row;
       gap: 1rem;
-      padding-block: 0.9rem;
+      padding-block: 0.55rem;
     }
 
     .wordmark {
+      grid-template-columns: 1.9rem auto;
+      column-gap: 0.5rem;
       min-width: auto;
       flex: 0 0 auto;
       font-size: 0.68rem;
       letter-spacing: 0.2em;
     }
 
-    .wordmark span:last-child {
+    .wordmark-tree {
+      width: 1.9rem;
+      height: 1.9rem;
+    }
+
+    .wordmark-text span:last-child {
       font-size: 0.61rem;
       letter-spacing: 0.21em;
     }
@@ -98,6 +125,20 @@
     .primary-nav a {
       min-height: 2.75rem;
       font-size: 0.74rem;
+    }
+  }
+
+  @media (max-width: 22rem) {
+    .header-inner {
+      gap: 0.45rem;
+    }
+
+    .primary-nav {
+      gap: 0.35rem;
+    }
+
+    .primary-nav a {
+      font-size: 0.68rem;
     }
   }
 </style>
