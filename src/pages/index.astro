@@ -388,6 +388,87 @@ import Layout from '../layouts/Layout.astro';
         </a>
       </div>
     </section>
+
+    <section class="research-motion page-shell" aria-labelledby="research-motion-title">
+      <header class="motion-intro">
+        <p class="eyebrow">Research in Motion</p>
+        <p class="motion-selection">
+          Selected propositions, working frameworks, and provisional constructs
+        </p>
+        <h2 id="research-motion-title">
+          The work develops at different speeds and in different forms.
+        </h2>
+      </header>
+
+      <div class="motion-objects">
+        <article class="motion-object" aria-labelledby="assistance-title">
+          <header class="motion-identity">
+            <h3 id="assistance-title">AI Assistance, Judgment &amp; Practical Agency</h3>
+            <p class="motion-metadata">Proposition · Proposed</p>
+          </header>
+          <p class="motion-question">
+            Under what conditions can artificial assistance improve human judgment
+            performance without materially reducing practical agency?
+          </p>
+          <div class="motion-notes">
+            <p>This corresponds to Research Agenda proposition P8, currently Proposed.</p>
+            <p>
+              The Intellectual Landscape characterizes this as a genuinely open and
+              high-value question: performance improvement has substantial adjacent
+              evidence, while preservation of practical agency remains less
+              standardized and may require longitudinal study.
+            </p>
+          </div>
+        </article>
+
+        <article class="motion-object motion-construct" aria-labelledby="persistent-state-title">
+          <header class="motion-identity">
+            <h3 id="persistent-state-title">Persistent Agentic State</h3>
+            <p class="motion-metadata">Provisional construct · Digital Sovereignty</p>
+          </header>
+          <p class="motion-question">
+            Does treating identity, authorization, memory and context, preferences
+            and policies, adaptive state, provenance, and relational state together
+            reveal governance problems that are missed when those layers are treated separately?
+          </p>
+          <div class="motion-notes">
+            <p>
+              Persistent Agentic State remains a provisional layered umbrella within
+              Digital Sovereignty rather than an independent research program merely
+              because it is important.
+            </p>
+          </div>
+        </article>
+
+        <article class="motion-object" aria-labelledby="constraint-architecture-title">
+          <header class="motion-identity">
+            <h3 id="constraint-architecture-title">Constraint Architecture</h3>
+            <p class="motion-metadata">Working framework · Comparative evaluation</p>
+          </header>
+          <p class="motion-question">
+            Can heterogeneous considerations relevant to complex judgment be represented
+            explicitly without collapsing important distinctions or introducing excessive
+            rigidity, cognitive burden, or false precision?
+          </p>
+          <div class="motion-notes">
+            <p>
+              Constraint Architecture remains a provisional representational synthesis
+              under comparative evaluation rather than a claimed novel general decision method.
+            </p>
+            <p>
+              Its continued value depends on whether it complements or improves upon
+              strong established approaches without creating false precision or unnecessary rigidity.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="motion-link">
+        <a class="cta-link" href="/research/">
+          View current research <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
   </main>
 </Layout>
 
@@ -1237,6 +1318,153 @@ import Layout from '../layouts/Layout.astro';
     .principles-link {
       display: block;
       margin-top: 2rem;
+    }
+  }
+  .research-motion {
+    border-top: 2px solid var(--color-green);
+    padding-block: var(--section-space);
+  }
+
+  .motion-intro,
+  .motion-object {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: clamp(1rem, 2.2vw, 2rem);
+  }
+
+  .motion-intro > .eyebrow {
+    grid-column: 1 / -1;
+  }
+
+  .motion-selection {
+    grid-column: 1 / span 3;
+    max-width: 19em;
+    margin: 1.5rem 0 0;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .motion-intro h2 {
+    grid-column: 4 / -1;
+    max-width: 19em;
+    margin: 1.5rem 0 0;
+    font-family: var(--font-serif);
+    font-size: clamp(2.2rem, 1.7rem + 1.8vw, 3.5rem);
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1.12;
+    text-wrap: balance;
+  }
+
+  .motion-objects {
+    margin-top: clamp(3.5rem, 6vw, 5.5rem);
+  }
+
+  .motion-object {
+    border-top: var(--rule);
+    padding-block: clamp(2.5rem, 4vw, 4rem);
+    align-items: start;
+  }
+
+  .motion-identity {
+    grid-column: 1 / span 3;
+  }
+
+  .motion-identity h3 {
+    max-width: 22em;
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 650;
+    line-height: 1.45;
+  }
+
+  .motion-metadata {
+    margin: 0.8rem 0 0;
+    color: var(--color-muted);
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+
+  .motion-question {
+    grid-column: 4 / span 5;
+    margin: 0;
+    color: var(--color-plum);
+    font-family: var(--font-serif);
+    font-size: clamp(1.45rem, 1.2rem + 0.7vw, 1.9rem);
+    line-height: 1.4;
+  }
+
+  .motion-notes {
+    grid-column: 9 / -1;
+    color: var(--color-muted);
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  .motion-notes p {
+    margin: 0;
+  }
+
+  .motion-notes p + p {
+    margin-top: 1rem;
+  }
+
+  .motion-construct .motion-question {
+    grid-column: 4 / -1;
+    max-width: 36em;
+  }
+
+  .motion-construct .motion-notes {
+    grid-column: 6 / -1;
+    max-width: 40rem;
+    margin-top: 1.75rem;
+    border-left: 1px solid var(--color-bronze);
+    padding-left: 1.25rem;
+  }
+
+  .motion-link {
+    border-top: var(--rule);
+    padding-top: 1.5rem;
+  }
+
+  @media (max-width: 70rem) {
+    .motion-question {
+      grid-column: 4 / -1;
+    }
+
+    .motion-notes {
+      grid-column: 4 / -1;
+      max-width: 40rem;
+      margin-top: 1.75rem;
+    }
+  }
+
+  @media (max-width: 50rem) {
+    .motion-intro,
+    .motion-object {
+      display: block;
+    }
+
+    .motion-selection {
+      max-width: 32em;
+      margin-top: 0.8rem;
+    }
+
+    .motion-intro h2 {
+      margin-top: 1.75rem;
+    }
+
+    .motion-question {
+      margin-top: 1.75rem;
+    }
+
+    .motion-identity h3 {
+      max-width: none;
+    }
+
+    .motion-metadata {
+      margin-top: 0.5rem;
     }
   }
 </style>
