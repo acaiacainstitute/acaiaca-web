@@ -313,6 +313,40 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
       </div>
     </section>
 
+    <section class="ai-orientation page-shell" aria-labelledby="ai-orientation-title">
+      <div class="ai-orientation-copy">
+        <p class="eyebrow">AI, in plain terms</p>
+        <h2 id="ai-orientation-title">A model is only part of the system.</h2>
+        <p>
+          A modern AI model takes context and produces output. In practice, the model sits
+          inside a larger system that determines what information and state it receives,
+          what tools it can use, and whether its outputs may trigger actions. When results
+          feed into later model calls, the system can operate iteratively toward an objective.
+        </p>
+        <p class="ai-orientation-transition">
+          None of this tells us what the system should be allowed to decide or do, who may
+          delegate authority to it, or who remains responsible for what follows.
+        </p>
+        <span class="cta-link ai-orientation-link">
+          Explore AI fundamentals <span aria-hidden="true">→</span>
+        </span>
+      </div>
+
+      <figure class="ai-sequence" aria-label="A technical sequence showing a model as one part of a larger AI system">
+        <ol>
+          <li>Context</li>
+          <li>Model</li>
+          <li>Output</li>
+          <li>Controlled execution</li>
+          <li>Environment</li>
+        </ol>
+        <figcaption>
+          <span aria-hidden="true">↑</span>
+          <span class="ai-sequence-loop-label">optional iterative cycle</span>
+        </figcaption>
+      </figure>
+    </section>
+
     <section class="research-areas page-shell" aria-labelledby="research-areas-title">
       <header class="research-areas-intro">
         <p class="eyebrow">Current Research Areas</p>
@@ -753,6 +787,19 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
   .judgment-boundaries { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; border-top: var(--rule); padding-top: 0.8rem; font-size: 0.82rem; color: var(--color-muted); }
   .judgment-boundary-lead { color: var(--color-charcoal); font-family: var(--font-serif); font-size: 1.02rem; margin-bottom: 0.3rem; }
   .judgment-boundaries .cta-link { padding-bottom: 0; }
+  .ai-orientation { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(32rem, 1.2fr); gap: 3rem; align-items: center; padding-block: 2rem; background: #ffffff70; box-shadow: 0 0 0 100vmax #ffffff70; clip-path: inset(0 -100vmax); }
+  .ai-orientation::before { position: absolute; z-index: -1; inset: 0 calc((100vw - 100%) / -2); border-block: var(--rule); content: ''; }
+  .ai-orientation h2 { font-size: clamp(1.55rem, 2vw, 1.9rem); }
+  .ai-orientation-copy > p:not(.eyebrow) { max-width: 40rem; color: var(--color-muted); font-size: 0.8rem; line-height: 1.45; }
+  .ai-orientation-transition { margin-top: 0.9rem; color: var(--color-charcoal) !important; }
+  .ai-orientation-link { min-height: 2rem; padding-block: 0; }
+  .ai-sequence { margin: 0; }
+  .ai-sequence ol { display: grid; grid-template-columns: minmax(4.5rem, 1fr) minmax(4.5rem, 1fr) minmax(4.5rem, 1fr) minmax(6.5rem, 1.35fr) minmax(5.5rem, 1fr); gap: 1.35rem; margin: 0; padding: 0; list-style: none; }
+  .ai-sequence li { position: relative; display: flex; align-items: center; justify-content: center; min-height: 3.3rem; padding: 0.45rem; border: var(--rule); background: var(--color-ivory); font-size: 0.72rem; line-height: 1.2; text-align: center; }
+  .ai-sequence li + li::before { position: absolute; left: -1.05rem; color: var(--color-green); content: '→' / ''; }
+  .ai-sequence figcaption { position: relative; height: 1.35rem; margin: 0.7rem 1.8rem 0; border-right: 1px dashed var(--color-rule); border-bottom: 1px dashed var(--color-rule); border-left: 1px dashed var(--color-rule); color: var(--color-green); font-size: 0.68rem; line-height: 1; text-align: center; }
+  .ai-sequence figcaption > span:first-child { position: absolute; top: -0.6rem; left: -0.28rem; background: #fbfaf7; }
+  .ai-sequence-loop-label { position: relative; bottom: -0.95rem; padding-inline: 0.55rem; background: #fbfaf7; }
   .research-areas { position: relative; }
   .research-areas-intro h2 { padding-right: 17rem; }
   .research-areas-scope { max-width: 34rem; font-size: 0.8rem; color: var(--color-muted); margin-bottom: 0.7rem; }
@@ -856,6 +903,9 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
 
   @media (max-width: 65rem) {
     .judgment { column-gap: 2rem; }
+    .ai-orientation { grid-template-columns: 1fr; gap: 1.25rem; }
+    .ai-orientation-copy > p:not(.eyebrow) { max-width: 48rem; }
+    .ai-sequence { max-width: 48rem; }
     .research-evolves { grid-template-columns: 1fr; }
     .evolves-intro, .evolves-principle, .inquiry-diagram { grid-column: 1; grid-row: auto; }
     .inquiry-diagram { max-width: 48rem; width: 100%; margin-inline: auto; }
@@ -925,6 +975,15 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
     .principle-list li { padding-block: 0.55rem; gap: 0.35rem; }
     .principle-list p, .judgment-scope, .judgment-boundaries, .research-question, .research-areas-scope, .works-framing, .works-functions p, .branch p { font-size: 0.9rem; }
     .judgment-boundaries > div + div { margin-top: 1rem; }
+    .ai-orientation { padding-block: 1.8rem; }
+    .ai-orientation-copy > p:not(.eyebrow) { font-size: 0.9rem; }
+    .ai-sequence { padding-left: 1rem; }
+    .ai-sequence ol { display: flex; flex-direction: column; gap: 0.75rem; border-left: 1px solid var(--color-rule); padding-left: 1rem; }
+    .ai-sequence li { width: min(12rem, 100%); min-height: 2.9rem; font-size: 0.85rem; }
+    .ai-sequence li + li::before { left: calc(50% - 0.25rem); top: -0.75rem; content: '↓' / ''; }
+    .ai-sequence figcaption { width: 12rem; height: 1.8rem; margin: 0.5rem 0 0 1rem; border: 0; border-right: 1px dashed var(--color-green); border-bottom: 1px dashed var(--color-green); border-left: 1px dashed var(--color-green); padding: 0; font-size: 0.78rem; text-align: center; }
+    .ai-sequence figcaption > span:first-child { top: -0.5rem; left: -0.35rem; background: #fbfaf7; }
+    .ai-sequence-loop-label { bottom: -1.4rem; padding-inline: 0.4rem; background: #fbfaf7; }
     .judgment-model { display: flex; flex-direction: column; border-left: 1px solid var(--color-bronze); padding-left: 0.75rem; }
     .judgment-context { flex-direction: row; justify-content: space-between; gap: 1rem; margin-bottom: 0.7rem; border: 0; padding: 0.2rem 0; }
     .judgment-context p { max-width: 50%; }
