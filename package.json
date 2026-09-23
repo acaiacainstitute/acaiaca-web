@@ -7,6 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "validate:dependencies": "node scripts/maintenance-impact.mjs --validate",
+    "prebuild": "npm run validate:dependencies",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

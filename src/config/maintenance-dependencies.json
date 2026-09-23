@@ -1,0 +1,51 @@
+{
+  "targets": {
+    "proposition:P6": {
+      "targetType": "proposition",
+      "target": "P6",
+      "source": "Research Agenda v1.2"
+    },
+    "proposition:P8": {
+      "targetType": "proposition",
+      "target": "P8",
+      "source": "Research Agenda v1.2"
+    },
+    "proposition:P11": {
+      "targetType": "proposition",
+      "target": "P11",
+      "source": "Research Agenda v1.2"
+    },
+    "research-object:human-agency-loop": {
+      "targetType": "research-object",
+      "target": "human-agency-loop",
+      "label": "Human Agency Loop",
+      "source": "Research Agenda v1.2"
+    }
+  },
+  "artifacts": {
+    "research-area:human-ai-agency": {
+      "label": "Human–AI Agency",
+      "canonicalPath": "/research/human-ai-agency/",
+      "dependencies": [
+        {
+          "target": "proposition:P8",
+          "role": "principal",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "proposition:P6",
+          "role": "supporting",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-object:human-agency-loop",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        }
+      ]
+    }
+  }
+}
