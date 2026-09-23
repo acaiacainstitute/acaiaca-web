@@ -318,10 +318,11 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
         <p class="eyebrow">AI, in plain terms</p>
         <h2 id="ai-orientation-title">A model is only part of the system.</h2>
         <p>
-          A modern AI model takes context and produces output. In practice, the model sits
-          inside a larger system that determines what information and state it receives,
-          what tools it can use, and whether its outputs may trigger actions. When results
-          feed into later model calls, the system can operate iteratively toward an objective.
+          A modern AI model takes inputs or context and produces output. The surrounding system
+          determines what the model receives, what tools it can use, and what happens next.
+          Outputs may influence people or downstream systems directly, or may become proposed
+          operations that cross an execution boundary before changing the environment. Some
+          systems then feed resulting state into later model calls.
         </p>
         <p class="ai-orientation-transition">
           None of this tells us what the system should be allowed to decide or do, who may
@@ -332,17 +333,30 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
         </span>
       </div>
 
-      <figure class="ai-sequence" aria-label="A technical sequence showing a model as one part of a larger AI system">
+      <figure class="ai-sequence" aria-label="A technical sequence showing model output leading to distinct informational and operational consequences">
         <ol>
-          <li>Context</li>
+          <li>Inputs / context</li>
           <li>Model</li>
           <li>Output</li>
-          <li>Controlled execution</li>
-          <li>Environment</li>
         </ol>
+        <div class="ai-consequences">
+          <p class="ai-consequences-label">What can happen next?</p>
+          <div class="ai-consequence-options">
+            <div class="ai-consequence ai-consequence-informational">
+              <p>Informational influence / downstream use</p>
+            </div>
+            <p class="ai-consequence-or">or</p>
+            <div class="ai-consequence ai-consequence-operational">
+              <p>Proposed operation</p>
+              <span class="ai-consequence-arrow" aria-hidden="true">→</span>
+              <p class="ai-execution-boundary">Execution boundary</p>
+              <span class="ai-consequence-arrow" aria-hidden="true">→</span>
+              <p>Environment</p>
+            </div>
+          </div>
+        </div>
         <figcaption>
-          <span aria-hidden="true">↑</span>
-          <span class="ai-sequence-loop-label">optional iterative cycle</span>
+          <span class="ai-sequence-loop-label">Optional: resulting state may inform later model calls</span>
         </figcaption>
       </figure>
     </section>
@@ -429,7 +443,7 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
       <header class="motion-intro">
         <p class="eyebrow">Research in Motion</p>
         <p class="motion-selection">
-          Selected propositions, working frameworks, and provisional constructs
+          Selected propositions and provisional constructs
         </p>
         <h2 id="research-motion-title">
           The work develops at different speeds and in different forms.
@@ -460,17 +474,6 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
           </p>
         </article>
 
-        <article class="motion-object" aria-labelledby="constraint-architecture-title">
-          <header class="motion-identity">
-            <h3 id="constraint-architecture-title">Constraint Architecture</h3>
-            <p class="motion-metadata">Working framework · Comparative evaluation</p>
-          </header>
-          <p class="motion-question">
-            Can heterogeneous considerations relevant to complex judgment be represented
-            explicitly without collapsing important distinctions or introducing excessive
-            rigidity, cognitive burden, or false precision?
-          </p>
-        </article>
       </div>
 
       <div class="motion-link">
@@ -794,12 +797,25 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
   .ai-orientation-transition { margin-top: 0.9rem; color: var(--color-charcoal) !important; }
   .ai-orientation-link { min-height: 2rem; padding-block: 0; }
   .ai-sequence { margin: 0; }
-  .ai-sequence ol { display: grid; grid-template-columns: minmax(4.5rem, 1fr) minmax(4.5rem, 1fr) minmax(4.5rem, 1fr) minmax(6.5rem, 1.35fr) minmax(5.5rem, 1fr); gap: 1.35rem; margin: 0; padding: 0; list-style: none; }
+  .ai-sequence ol { display: grid; grid-template-columns: repeat(3, minmax(5.5rem, 1fr)); gap: 1.35rem; width: 72%; margin: 0 auto; padding: 0; list-style: none; }
   .ai-sequence li { position: relative; display: flex; align-items: center; justify-content: center; min-height: 3.3rem; padding: 0.45rem; border: var(--rule); background: var(--color-ivory); font-size: 0.72rem; line-height: 1.2; text-align: center; }
   .ai-sequence li + li::before { position: absolute; left: -1.05rem; color: var(--color-green); content: '→' / ''; }
-  .ai-sequence figcaption { position: relative; height: 1.35rem; margin: 0.7rem 1.8rem 0; border-right: 1px dashed var(--color-rule); border-bottom: 1px dashed var(--color-rule); border-left: 1px dashed var(--color-rule); color: var(--color-green); font-size: 0.68rem; line-height: 1; text-align: center; }
-  .ai-sequence figcaption > span:first-child { position: absolute; top: -0.6rem; left: -0.28rem; background: #fbfaf7; }
-  .ai-sequence-loop-label { position: relative; bottom: -0.95rem; padding-inline: 0.55rem; background: #fbfaf7; }
+  .ai-consequences { position: relative; margin-top: 0.65rem; padding-top: 0.75rem; }
+  .ai-consequences::before { position: absolute; top: 0; left: 75%; height: 0.75rem; border-left: 1px solid var(--color-rule); content: ''; }
+  .ai-consequences-label { width: max-content; margin: 0 0 0.5rem 75%; color: var(--color-green); font-size: 0.7rem; line-height: 1; transform: translateX(-50%); }
+  .ai-consequence-options { position: relative; display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr); gap: 1.2rem; align-items: start; padding-top: 1rem; }
+  .ai-consequence-options::before { position: absolute; top: 0; right: 25%; left: 19%; border-top: 1px solid var(--color-rule); content: ''; }
+  .ai-consequence-options::after { position: absolute; top: -0.5rem; right: 25%; height: 0.5rem; border-right: 1px solid var(--color-rule); content: ''; }
+  .ai-consequence { position: relative; display: flex; min-height: 3rem; align-items: center; justify-content: center; color: var(--color-muted); text-align: center; }
+  .ai-consequence::before { position: absolute; top: -1rem; left: 50%; height: 1rem; border-left: 1px solid var(--color-rule); content: ''; }
+  .ai-consequence p { margin: 0; font-size: 0.7rem; line-height: 1.25; }
+  .ai-consequence-informational { border: var(--rule); background: #ffffff52; padding: 0.5rem; }
+  .ai-consequence-or { display: none; }
+  .ai-consequence-operational { width: 9.5rem; flex-direction: column; gap: 0.3rem; justify-self: center; }
+  .ai-consequence-operational p { display: flex; width: 100%; min-height: 2.35rem; align-items: center; justify-content: center; border: var(--rule); background: #ffffff52; padding: 0.35rem; }
+  .ai-execution-boundary { border-style: dashed !important; border-color: var(--color-green) !important; color: var(--color-green); }
+  .ai-consequence-arrow { color: var(--color-green); font-size: 0.68rem; line-height: 0.7; transform: rotate(90deg); }
+  .ai-sequence figcaption { margin: 0.6rem 1.8rem 0; border-top: 1px dashed var(--color-rule); padding-top: 0.35rem; color: var(--color-green); font-size: 0.65rem; line-height: 1.2; text-align: center; }
   .research-areas { position: relative; }
   .research-areas-intro h2 { padding-right: 17rem; }
   .research-areas-scope { max-width: 34rem; font-size: 0.8rem; color: var(--color-muted); margin-bottom: 0.7rem; }
@@ -823,12 +839,12 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
   .motion-intro { display: flex; flex-direction: column; }
   .motion-intro h2 { order: 1; padding-right: 12rem; }
   .motion-selection { order: 2; font-size: 0.78rem; color: #ded4c3; margin: 0 0 0.9rem; }
-  .motion-objects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; align-items: start; }
+  .motion-objects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4rem; align-items: start; }
   .motion-object { border-left: 1px solid #b1a08b; padding-left: 1.4rem; }
   .motion-identity { display: flex; flex-direction: column; }
   .motion-metadata { order: -1; font-size: 0.69rem; letter-spacing: 0.06em; color: #ded4c3; margin-bottom: 0.45rem; }
   .motion-identity h3 { font-family: var(--font-serif); font-size: 1.22rem; line-height: 1.2; margin: 0 0 0.45rem; }
-  .motion-question { margin-bottom: 0; font-size: 0.95rem; line-height: 1.4; }
+  .motion-question { max-width: 32rem; margin-bottom: 0; font-size: 0.95rem; line-height: 1.4; }
   .motion-link { position: absolute; right: 0; top: 1.8rem; }
   .works-framing { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; font-size: 0.82rem; color: var(--color-muted); }
   .works-functions { display: grid; grid-template-columns: 1fr 1fr 0.9fr; gap: 2rem; margin-top: 0.7rem; align-items: start; }
@@ -978,12 +994,22 @@ import institutionalLandscape from '../assets/homepage/homepage-institutional-la
     .ai-orientation { padding-block: 1.8rem; }
     .ai-orientation-copy > p:not(.eyebrow) { font-size: 0.9rem; }
     .ai-sequence { padding-left: 1rem; }
-    .ai-sequence ol { display: flex; flex-direction: column; gap: 0.75rem; border-left: 1px solid var(--color-rule); padding-left: 1rem; }
+    .ai-sequence ol { display: flex; width: auto; flex-direction: column; gap: 0.75rem; margin: 0; border-left: 1px solid var(--color-rule); padding-left: 1rem; }
     .ai-sequence li { width: min(12rem, 100%); min-height: 2.9rem; font-size: 0.85rem; }
     .ai-sequence li + li::before { left: calc(50% - 0.25rem); top: -0.75rem; content: '↓' / ''; }
-    .ai-sequence figcaption { width: 12rem; height: 1.8rem; margin: 0.5rem 0 0 1rem; border: 0; border-right: 1px dashed var(--color-green); border-bottom: 1px dashed var(--color-green); border-left: 1px dashed var(--color-green); padding: 0; font-size: 0.78rem; text-align: center; }
-    .ai-sequence figcaption > span:first-child { top: -0.5rem; left: -0.35rem; background: #fbfaf7; }
-    .ai-sequence-loop-label { bottom: -1.4rem; padding-inline: 0.4rem; background: #fbfaf7; }
+    .ai-consequences { width: 12rem; margin: 0.9rem 0 0 1rem; border-left: 1px solid var(--color-rule); padding: 0 0 0 1rem; }
+    .ai-consequences::before { top: 0; left: -1px; width: 1rem; height: 0; border-top: 1px solid var(--color-rule); border-left: 0; }
+    .ai-consequences-label { margin: 0 0 0.6rem; font-size: 0.8rem; transform: none; }
+    .ai-consequence-options { display: block; }
+    .ai-consequence-options::before, .ai-consequence-options::after, .ai-consequence::before { content: none; }
+    .ai-consequence { min-height: 0; justify-content: flex-start; text-align: left; }
+    .ai-consequence p { font-size: 0.8rem; }
+    .ai-consequence-informational { padding: 0.65rem; }
+    .ai-consequence-or { display: block; margin: 0.65rem 0; color: var(--color-green); font-size: 0.72rem; text-align: center; text-transform: uppercase; }
+    .ai-consequence-operational { display: flex; width: auto; flex-direction: column; gap: 0.35rem; margin: 0; }
+    .ai-consequence-operational p { width: 100%; min-height: 2.9rem; flex: none; padding: 0.5rem; text-align: center; }
+    .ai-consequence-arrow { line-height: 0.8; }
+    .ai-sequence figcaption { width: 12rem; margin: 0.7rem 0 0 1rem; padding-top: 0.45rem; font-size: 0.72rem; text-align: left; }
     .judgment-model { display: flex; flex-direction: column; border-left: 1px solid var(--color-bronze); padding-left: 0.75rem; }
     .judgment-context { flex-direction: row; justify-content: space-between; gap: 1rem; margin-bottom: 0.7rem; border: 0; padding: 0.2rem 0; }
     .judgment-context p { max-width: 50%; }
