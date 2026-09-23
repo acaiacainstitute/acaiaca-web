@@ -1,0 +1,48 @@
+---
+import { Image } from 'astro:assets';
+import treeMark from '../assets/brand/acaiaca-tree-mark-ivory.png';
+import Header from '../components/Header.astro';
+import { webPageStructuredData } from '../lib/metadata';
+import Layout from './Layout.astro';
+import '../styles/research-area.css';
+
+interface Props {
+  metadata: {
+    title: string;
+    description: string;
+    canonicalPath: string;
+  };
+}
+
+const { metadata } = Astro.props;
+const pageTitle = `${metadata.title} | Acaiaca Institute`;
+---
+
+<Layout
+  title={pageTitle}
+  description={metadata.description}
+  canonicalPath={metadata.canonicalPath}
+  structuredData={webPageStructuredData({
+    title: metadata.title,
+    description: metadata.description,
+    canonicalPath: metadata.canonicalPath,
+  })}
+>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <Header />
+
+  <main id="main-content" class="research-area-page">
+    <slot />
+  </main>
+
+  <footer class="research-footer">
+    <div class="page-shell research-footer-inner">
+      <a class="research-footer-identity" href="/">
+        <Image src={treeMark} alt="" width={28} height={28} />
+        <span>Acaiaca Institute</span>
+      </a>
+      <p>Humanity is the loop.</p>
+      <a href="/">Return to the Homepage</a>
+    </div>
+  </footer>
+</Layout>

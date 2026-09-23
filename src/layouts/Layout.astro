@@ -1,19 +1,22 @@
 ---
 import '../styles/global.css';
+import { absoluteUrl, site } from '../config/site';
 
 interface Props {
   title?: string;
   description?: string;
   canonicalPath?: string;
+  structuredData?: Record<string, unknown>;
 }
 
 const {
-  title = 'Acaiaca Institute',
-  description = 'Acaiaca Institute exists to understand, preserve, and amplify human judgment in an AI-augmented world.',
+  title = site.name,
+  description = site.description,
   canonicalPath = '/',
+  structuredData,
 } = Astro.props;
 
-const canonicalUrl = new URL(canonicalPath, 'https://acaiacainstitute.org').toString();
+const canonicalUrl = absoluteUrl(canonicalPath);
 ---
 
 <!doctype html>
@@ -25,6 +28,15 @@ const canonicalUrl = new URL(canonicalPath, 'https://acaiacainstitute.org').toSt
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+
+    {structuredData && (
+      <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    )}
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />

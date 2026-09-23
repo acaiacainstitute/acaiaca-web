@@ -1,0 +1,29 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import ResearchAreaLayout from '../../layouts/ResearchAreaLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection(
+    'researchAreas',
+    ({ data }) =>
+      data.publication.visibility === 'public' &&
+      data.publication.status === 'published',
+  );
+
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<'researchAreas'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<ResearchAreaLayout metadata={entry.data}>
+  <Content />
+</ResearchAreaLayout>
