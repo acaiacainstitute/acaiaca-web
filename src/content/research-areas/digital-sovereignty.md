@@ -123,7 +123,7 @@ provenance:
     <div class="sovereignty-current-meta"><span>Research context: September 2026</span><span>One coupled inquiry · no empirical finding implied</span></div>
     <div class="sovereignty-coupled" aria-label="Coupled current-work inquiry">
       <article>
-        <header><h3>P11 · Proposed</h3><p>Proposed integrative proposition</p></header>
+        <header><h3>P11 · Proposed</h3><p>Proposed integrative proposition</p><p><a href="/research/agenda/#p11">Read P11 and its Research Agenda context →</a></p></header>
         <p>Persistent AI systems may create sovereignty problems not fully addressed by conventional account ownership, application-level privacy controls, ordinary data portability, or isolated governance of individual state layers.</p>
       </article>
       <article>

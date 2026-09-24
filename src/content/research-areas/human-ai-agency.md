@@ -114,8 +114,8 @@ provenance:
       <header><h3>Improving judgment-related performance while preserving agency</h3><p class="agency-object-meta">P8-centered joint-outcome inquiry · P8 Proposed · P6 Proposed supporting premise</p></header>
       <div class="agency-work-copy"><p>Acaiaca is examining judgment-related performance and practical agency as separate outcomes, asking which conditions could permit improvement in the first without material reduction in the second.</p><p><strong>Next movement:</strong> make the relevant tasks, assistance arrangements, performance criteria, agency dimensions, and temporal conditions sufficiently explicit to support a discriminating evaluation.</p></div>
       <div class="agency-proposition-pair">
-        <div><h4>P6 · Foundational / inherited premise</h4><p><strong>Proposed.</strong> A more capable system does not necessarily give the person more practical agency. P6 prevents an unsupported inference from capability to agency; it is not an independent project.</p></div>
-        <div><h4>P8 · Open / integrative proposition</h4><p><strong>Proposed.</strong> Under identifiable conditions, AI assistance may improve judgment-related performance without materially reducing practical agency. Better task results alone do not establish preservation.</p></div>
+        <div><h4>P6 · Foundational / inherited premise</h4><p><strong>Proposed.</strong> A more capable system does not necessarily give the person more practical agency. P6 prevents an unsupported inference from capability to agency; it is not an independent project.</p><p><a href="/research/agenda/#p6">Read P6 and its Research Agenda context →</a></p></div>
+        <div><h4>P8 · Open / integrative proposition</h4><p><strong>Proposed.</strong> Under identifiable conditions, AI assistance may improve judgment-related performance without materially reducing practical agency. Better task results alone do not establish preservation.</p><p><a href="/research/agenda/#p8">Read P8 and its Research Agenda context →</a></p></div>
       </div>
     </article>
     <article class="agency-work-unit">

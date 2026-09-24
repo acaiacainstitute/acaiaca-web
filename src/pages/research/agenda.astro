@@ -1,0 +1,210 @@
+---
+import { Image } from 'astro:assets';
+import treeMark from '../../assets/brand/acaiaca-tree-mark-ivory.png';
+import Header from '../../components/Header.astro';
+import Layout from '../../layouts/Layout.astro';
+import { webPageStructuredData } from '../../lib/metadata';
+import '../../styles/proposition-index.css';
+
+const metadata = {
+  title: 'Research Agenda — Proposition Index',
+  description:
+    'A selected public reference to Acaiaca propositions P6, P8, and P11, with their current state, research role, public context, and provenance.',
+  canonicalPath: '/research/agenda/',
+};
+const pageTitle = metadata.title + ' | Acaiaca Institute';
+---
+
+<Layout
+  title={pageTitle}
+  description={metadata.description}
+  canonicalPath={metadata.canonicalPath}
+  structuredData={webPageStructuredData(metadata)}
+>
+  <a class="agenda-skip-link" href="#main-content">Skip to main content</a>
+  <Header />
+
+  <main id="main-content" class="proposition-index-page">
+    <section class="reference-hero" aria-labelledby="agenda-title">
+      <div class="page-shell reference-hero-grid">
+        <div class="reference-hero-main">
+          <p class="eyebrow">Research reference</p>
+          <h1 id="agenda-title">Research Agenda — Proposition Index</h1>
+          <p class="reference-hero-lede">A selected public reference to propositions Acaiaca exposes across its research pages. Research Agenda v1.2 remains authoritative; this page makes those propositions understandable and inspectable without reproducing the internal Agenda.</p>
+        </div>
+        <aside class="source-authority" aria-label="Source authority">
+          <p class="source-authority-label">Source authority</p>
+          <strong>Research Agenda v1.2</strong>
+          <p>Canonical source for proposition identity, wording, formal state, and research role.</p>
+          <p class="source-currentness">Selected public representation · September 2026</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="agenda-orientation" aria-labelledby="orientation-title">
+      <div class="page-shell agenda-orientation-grid">
+        <header>
+          <p class="eyebrow">How to read this page</p>
+          <h2 id="orientation-title">Claims first. Identifiers second.</h2>
+        </header>
+        <div class="agenda-orientation-copy">
+          <p>Each entry leads with the proposition’s human-readable meaning. Its stable proposition ID, formal state, research role, current public context, and provenance follow.</p>
+          <div class="agenda-orientation-rule">
+            <strong>This is a selective public index, not a complete rendering of Acaiaca’s Research Agenda.</strong>
+            <p>P6, P8, and P11 appear here because their identifiers are exposed by accepted public research pages. Additional propositions may be represented later when public need earns their inclusion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="propositions-heading" aria-labelledby="propositions-title">
+      <div class="page-shell propositions-heading-inner">
+        <header>
+          <p class="eyebrow">Selected public propositions</p>
+          <h2 id="propositions-title">Current proposition referents</h2>
+        </header>
+        <p>Each entry is independently addressable so a visitor arriving from another research page can understand the proposition without reading this page from the beginning.</p>
+      </div>
+    </section>
+
+    <section class="proposition-entry" id="p6" aria-labelledby="p6-title">
+      <div class="page-shell">
+        <div class="proposition-heading">
+          <div class="proposition-heading-main">
+            <p class="eyebrow">Selected proposition</p>
+            <h2 id="p6-title">Increasing system capability does not necessarily increase human agency.</h2>
+          </div>
+          <div class="proposition-meta">
+            <p class="proposition-id-state">P6 · Proposed</p>
+            <p class="proposition-role">Foundational / inherited premise</p>
+          </div>
+        </div>
+        <div class="proposition-grid">
+          <div class="proposition-body">
+            <p>Systems that increase what a person can accomplish may nevertheless diminish dimensions of practical agency such as understanding, influence, intervention, revocability, contestability, or exit, while also affecting related capacities such as retained competence.</p>
+            <div class="proposition-explanation">
+              <p class="proposition-explanation-label">Why it matters</p>
+              <p>The open research concerns the conditions under which increased artificial capability increases, preserves, redistributes, or diminishes practical human agency.</p>
+            </div>
+          </div>
+          <aside class="proposition-context" aria-label="P6 public context and provenance">
+            <div class="proposition-context-item">
+              <span class="proposition-context-label">Current public context</span>
+              <a class="proposition-context-link" href="/research/human-ai-agency/">Explore Human–AI Agency →</a>
+            </div>
+            <div class="proposition-context-item">
+              <span class="proposition-context-label">Source</span>
+              <p class="proposition-context-value">Research Agenda v1.2</p>
+            </div>
+            <div class="proposition-context-item">
+              <span class="proposition-context-label">Public representation</span>
+              <p class="proposition-context-value">Current as of September 2026</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="proposition-entry" id="p8" aria-labelledby="p8-title">
+      <div class="page-shell">
+        <div class="proposition-heading">
+          <div class="proposition-heading-main">
+            <p class="eyebrow">Selected proposition</p>
+            <h2 id="p8-title">Under identifiable conditions, artificial assistance can improve human judgment performance without materially reducing practical agency.</h2>
+          </div>
+          <div class="proposition-meta">
+            <p class="proposition-id-state">P8 · Proposed</p>
+            <p class="proposition-role">Open / integrative proposition</p>
+          </div>
+        </div>
+        <div class="proposition-grid">
+          <div class="proposition-body">
+            <p>The relevant conditions, tasks, forms of assistance, dimensions of judgment performance, and dimensions of practical agency remain subjects of inquiry.</p>
+            <div class="proposition-explanation">
+              <p class="proposition-explanation-label">Why it matters</p>
+              <p>The proposition requires joint evaluation of performance and agency and may require longitudinal study where dependency, trust, skill retention, or changing delegation matter.</p>
+            </div>
+          </div>
+          <aside class="proposition-context" aria-label="P8 public context and provenance">
+            <div class="proposition-context-item">
+              <span class="proposition-context-label">Current public context</span>
+              <a class="proposition-context-link" href="/research/human-ai-agency/">Explore Human–AI Agency →</a>
+            </div>
+            <div class="proposition-context-item">
+              <span class="proposition-context-label">Source</span>
+              <p class="proposition-context-value">Research Agenda v1.2</p>
+            </div>
+            <div class="proposition-context-item">
+              <span class="proposition-context-label">Public representation</span>
+              <p class="proposition-context-value">Current as of September 2026</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="proposition-entry" id="p11" aria-labelledby="p11-title">
+      <div class="page-shell">
+        <div class="proposition-heading">
+          <div class="proposition-heading-main">
+            <p class="eyebrow">Selected proposition</p>
+            <h2 id="p11-title">Persistent AI systems may create sovereignty problems not fully addressed by conventional account ownership, application-level privacy controls, ordinary data portability, or isolated governance of individual state layers.</h2>
+          </div>
+          <div class="proposition-meta">
+            <p class="proposition-id-state">P11 · Proposed</p>
+            <p class="proposition-role">Open / integrative proposition</p>
+          </div>
+        </div>
+        <div class="proposition-grid">
+          <div class="proposition-body">
+            <p>Existing research already addresses important parts of this problem through established privacy, identity, authorization, interoperability, memory, portability, preference, provenance, and governance mechanisms.</p>
+            <div class="proposition-explanation">
+              <p class="proposition-explanation-label">Why it matters</p>
+              <p>The open research concerns whether the combined persistent state required for continuing delegated representation creates problems that cannot be resolved adequately by treating its component layers independently.</p>
+            </div>
+            <div class="proposition-qualification">
+              <span>Narrowing / rejection condition</span>
+              If existing mechanisms prove sufficient when properly integrated, the stronger sovereignty claim should be narrowed or rejected.
+            </div>
+          </div>
+          <aside class="proposition-context" aria-label="P11 public context and provenance">
+            <div class="proposition-context-item">
+              <span class="proposition-context-label">Current public context</span>
+              <a class="proposition-context-link" href="/research/digital-sovereignty/">Explore Digital Sovereignty →</a>
+            </div>
+            <div class="proposition-context-item">
+              <span class="proposition-context-label">Source</span>
+              <p class="proposition-context-value">Research Agenda v1.2</p>
+            </div>
+            <div class="proposition-context-item">
+              <span class="proposition-context-label">Public representation</span>
+              <p class="proposition-context-value">Current as of September 2026</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="agenda-public-note" aria-labelledby="public-note-title">
+      <div class="page-shell agenda-public-note-grid">
+        <div>
+          <p class="eyebrow">About this public representation</p>
+          <h2 id="public-note-title">Authority remains upstream.</h2>
+          <p>Research Agenda v1.2 remains authoritative for proposition identity, canonical wording, formal state, and research role. This page is a visitor-facing representation of selected propositions rather than a second canonical Agenda.</p>
+        </div>
+        <p class="agenda-public-statement">The index may grow as additional proposition identifiers become publicly relevant. Future inclusion follows public need, not numerical completeness. The propositions shown here do not form a complete taxonomy, and this page does not expose Acaiaca’s internal maintenance-dependency graph.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="agenda-footer">
+    <div class="page-shell agenda-footer-inner">
+      <a class="agenda-footer-identity" href="/">
+        <Image src={treeMark} alt="" width={28} height={28} />
+        <span>Acaiaca Institute</span>
+      </a>
+      <p>Humanity is the loop.</p>
+      <a href="/">Return to the Homepage</a>
+    </div>
+  </footer>
+</Layout>
