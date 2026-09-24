@@ -10,6 +10,7 @@ const registryPath = resolve(
 const supportedRoles = {
   proposition: new Set(["principal", "supporting"]),
   "research-object": new Set(["material"]),
+  "research-state": new Set(["material"]),
 };
 
 function isRecord(value) {

@@ -26,6 +26,42 @@
       "target": "persistent-agentic-state",
       "label": "Persistent Agentic State",
       "source": "Research Agenda v1.2"
+    },
+    "research-state:judgment": {
+      "targetType": "research-state",
+      "target": "judgment",
+      "label": "Judgment",
+      "source": "Website Second-Click Architecture & Page Roadmap v0.7"
+    },
+    "research-state:human-ai-agency": {
+      "targetType": "research-state",
+      "target": "human-ai-agency",
+      "label": "Human–AI Agency",
+      "source": "Website Second-Click Architecture & Page Roadmap v0.7"
+    },
+    "research-state:delegation-authority": {
+      "targetType": "research-state",
+      "target": "delegation-authority",
+      "label": "Delegation & Authority",
+      "source": "Website Second-Click Architecture & Page Roadmap v0.7"
+    },
+    "research-state:responsibility-in-ai-mediated-systems": {
+      "targetType": "research-state",
+      "target": "responsibility-in-ai-mediated-systems",
+      "label": "Responsibility in AI-Mediated Systems",
+      "source": "Website Second-Click Architecture & Page Roadmap v0.7"
+    },
+    "research-state:digital-sovereignty": {
+      "targetType": "research-state",
+      "target": "digital-sovereignty",
+      "label": "Digital Sovereignty",
+      "source": "Website Second-Click Architecture & Page Roadmap v0.7"
+    },
+    "research-state:digital-civil-society": {
+      "targetType": "research-state",
+      "target": "digital-civil-society",
+      "label": "Digital Civil Society",
+      "source": "Website Second-Click Architecture & Page Roadmap v0.7"
     }
   },
   "artifacts": {
@@ -90,6 +126,48 @@
         {
           "target": "proposition:P11",
           "role": "principal",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        }
+      ]
+    },
+    "navigation:explore-research": {
+      "label": "Explore the Research",
+      "canonicalPath": "/research/",
+      "dependencies": [
+        {
+          "target": "research-state:judgment",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-state:human-ai-agency",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-state:delegation-authority",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-state:responsibility-in-ai-mediated-systems",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-state:digital-sovereignty",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-state:digital-civil-society",
+          "role": "material",
           "reviewOnMaterialChange": true,
           "syncOnRepresentationChange": true
         }

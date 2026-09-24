@@ -1,0 +1,246 @@
+---
+import { Image } from 'astro:assets';
+import treeMark from '../../assets/brand/acaiaca-tree-mark-ivory.png';
+import Header from '../../components/Header.astro';
+import Layout from '../../layouts/Layout.astro';
+import { webPageStructuredData } from '../../lib/metadata';
+import '../../styles/explore-research.css';
+
+const metadata = {
+  title: 'Explore the Research',
+  description:
+    'Explore the questions organizing Acaiaca Institute’s research, how they connect, and which substantive destinations currently exist.',
+  canonicalPath: '/research/',
+};
+const pageTitle = metadata.title + ' | Acaiaca Institute';
+---
+
+<Layout
+  title={pageTitle}
+  description={metadata.description}
+  canonicalPath={metadata.canonicalPath}
+  structuredData={webPageStructuredData(metadata)}
+>
+  <a class="explore-skip-link" href="#main-content">Skip to main content</a>
+  <Header />
+
+  <main id="main-content" class="explore-page">
+    <section class="explore-hero" aria-labelledby="explore-title">
+      <div class="page-shell explore-hero-grid">
+        <div class="explore-hero-main">
+          <p class="eyebrow">Explore the research</p>
+          <h1 id="explore-title">What is Acaiaca actually trying to understand?</h1>
+          <p class="explore-hero-lede">Acaiaca studies how increasingly capable artificial systems change the structure of human judgment, agency, authority, participation, and responsibility. The research begins with judgment and branches into connected questions about what people can still influence, who may legitimately decide or act, who must answer for consequences, how persistent AI-mediated relationships remain governable, and what these changes may mean for institutions.</p>
+        </div>
+        <aside class="explore-hero-side" aria-label="Research landscape orientation">
+          <p class="eyebrow">Research landscape</p>
+          <strong>Follow the questions, not an internal taxonomy.</strong>
+          <p>This page maps the questions organizing Acaiaca’s research and where substantive exploration currently exists.</p>
+          <p class="explore-distinction">Explore maps the research landscape. Current Research maps the work materially in motion within it.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="explore-foundation" aria-labelledby="judgment-title">
+      <div class="page-shell explore-foundation-grid">
+        <header>
+          <p class="eyebrow">Foundational thesis</p>
+          <h2 id="judgment-title">Judgment</h2>
+          <p class="explore-foundation-question">What does Acaiaca mean by judgment?</p>
+        </header>
+        <div>
+          <p class="explore-foundation-copy">Acaiaca begins with the problem of judgment: how considered conclusions are reached about what is true, appropriate, permissible, preferable, or to be done. Once artificial systems participate materially in those processes, further questions arise concerning agency, authority, responsibility, persistence, and institutions.</p>
+          <div class="explore-foundation-cue">
+            Judgment is the generative research frame for the landscape below; it is not another peer Research-Area treatment.
+            <span class="explore-route-state">The Judgment Thesis · governed deeper destination · no public page currently available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-transition" aria-labelledby="transition-title">
+      <div class="page-shell explore-transition-grid">
+        <header>
+          <p class="eyebrow">From one concern to several questions</p>
+          <h2 id="transition-title">“Human in the loop” does not resolve one problem.</h2>
+        </header>
+        <div>
+          <p class="explore-transition-copy">As AI participates more deeply in human activity, different questions emerge depending on what is changing: the person’s practical agency, the authority being delegated, the responsibility that remains, the state that carries a relationship through time, or the institutions that recognize and coordinate those relationships.</p>
+          <p class="explore-transition-strong">The page follows those questions as an inquiry. The sequence helps orientation, but it is not a strict causal hierarchy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-landscape" aria-labelledby="landscape-title">
+      <div class="page-shell">
+        <div class="explore-landscape-head">
+          <header>
+            <p class="eyebrow">Research map</p>
+            <h2 id="landscape-title">Questions with substantive inquiry</h2>
+          </header>
+          <p>Question-first treatments lead. Canonical area names anchor orientation. Maturity cues explain why destinations differ without turning the page into a maturity system.</p>
+        </div>
+
+        <div class="explore-inquiry-list">
+          <article class="explore-inquiry explore-inquiry--left">
+            <div class="explore-inquiry-top">
+              <h3>What practical ability does a person retain when AI participates more deeply in activity on or for that person’s behalf?</h3>
+              <div class="explore-inquiry-meta">
+                <span class="explore-area-name">Human–AI Agency</span>
+                <span class="explore-maturity">Active inquiry</span>
+              </div>
+            </div>
+            <p class="explore-inquiry-copy">A person can remain formally “in the loop” while losing practical ability to understand what is happening, influence or redirect it, intervene, revoke delegated activity, contest a result, or realistically exit the arrangement. Human–AI Agency investigates those practical conditions rather than treating human presence alone as evidence of meaningful control.</p>
+            <div class="explore-inquiry-foot">
+              <div>
+                <span class="explore-branch-label">Question this raises</span>
+                <p class="explore-branch-question">If practical agency shifts, who still has authority to decide or act?</p>
+              </div>
+              <div class="explore-destination">
+                <a href="/research/human-ai-agency/">Explore Human–AI Agency →</a>
+                <span class="explore-route-live">Implemented destination</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="explore-inquiry explore-inquiry--right">
+            <div class="explore-inquiry-top">
+              <h3>What exactly has been delegated, and who still has legitimate authority?</h3>
+              <div class="explore-inquiry-meta">
+                <span class="explore-area-name">Delegation &amp; Authority</span>
+                <span class="explore-maturity">Active inquiry</span>
+              </div>
+            </div>
+            <p class="explore-inquiry-copy">AI systems may be given work, access, discretion, execution capability, standing instructions, or permission to represent another actor. Those are not equivalent forms of delegation, and technical ability or permission does not by itself establish legitimate authority. This research asks what has actually been delegated, who retains authority, and how that authority should be bounded, recognized, revoked, or transferred.</p>
+            <div class="explore-inquiry-foot">
+              <div>
+                <span class="explore-branch-label">Question this raises</span>
+                <p class="explore-branch-question">If authority and execution separate, who must answer for what follows?</p>
+              </div>
+              <div class="explore-destination">
+                <p class="explore-not-live">A substantive Research-Area destination is governed; no public page is currently available.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="explore-inquiry explore-inquiry--left">
+            <div class="explore-inquiry-top">
+              <h3>Who must answer when judgment, authority, control, action, and consequence no longer reside in the same actor?</h3>
+              <div class="explore-inquiry-meta">
+                <span class="explore-area-name">Responsibility in AI-Mediated Systems</span>
+                <span class="explore-maturity">Active inquiry</span>
+              </div>
+            </div>
+            <p class="explore-inquiry-copy">Responsibility is not one relationship. Causal contribution, role responsibility, answerability, legal liability, and moral responsibility may overlap, but they need not attach to the same person or institution. AI-mediated activity makes those distinctions more difficult to trace when judgment, authority, control, execution, and consequence are distributed.</p>
+            <div class="explore-inquiry-foot">
+              <div>
+                <span class="explore-branch-label">Question this raises</span>
+                <p class="explore-branch-question">If responsibility depends partly on who had authority or control, how should those relationships remain traceable?</p>
+              </div>
+              <div class="explore-destination">
+                <p class="explore-not-live">A substantive Research-Area destination is governed; no public page is currently available.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="explore-inquiry explore-inquiry--right">
+            <div class="explore-inquiry-top">
+              <h3>Who controls the persistent state that carries an AI-mediated relationship through time?</h3>
+              <div class="explore-inquiry-meta">
+                <span class="explore-area-name">Digital Sovereignty</span>
+                <span class="explore-maturity">Early active inquiry</span>
+              </div>
+            </div>
+            <p class="explore-inquiry-copy">Continuing AI-mediated relationships may depend on persistent identity, authorization, memory and context, preferences or policies, provenance, and institutional recognition. Digital Sovereignty asks how that state remains governable across time—including questions of control, portability, revocation, expiry, recovery, and recognition.</p>
+            <div class="explore-inquiry-foot">
+              <div>
+                <span class="explore-branch-label">Question this raises</span>
+                <p class="explore-branch-question">If delegated representation persists across time and institutions, what happens when artificial systems begin to participate or represent within collective life?</p>
+              </div>
+              <div class="explore-destination">
+                <a href="/research/digital-sovereignty/">Explore Digital Sovereignty →</a>
+                <span class="explore-route-live">Implemented destination</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-connections" aria-labelledby="connections-title">
+      <div class="page-shell explore-connections-grid">
+        <div>
+          <p class="eyebrow">How the questions connect</p>
+          <h2 id="connections-title">A landscape, not a pipeline.</h2>
+          <p class="explore-connections-lede">The sequence creates a readable first path through the research. The questions also connect laterally and recursively.</p>
+        </div>
+        <div class="explore-connection-lines">
+          <p><strong>Agency</strong> raises Authority.</p>
+          <p><strong>Authority</strong> raises Responsibility.</p>
+          <p>Persistent delegation raises <strong>Sovereignty</strong>.</p>
+          <p>Persistent representation raises <strong>Digital Civil Society</strong>.</p>
+          <p class="explore-connection-close">Judgment remains implicated across them all.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-emerging" aria-labelledby="civil-society-title">
+      <div class="page-shell explore-emerging-grid">
+        <header>
+          <p class="eyebrow">Emerging question</p>
+          <h2 id="civil-society-title">What happens to participation, representation, legitimacy, and collective coordination when artificial systems become persistent participants or representatives within institutions?</h2>
+        </header>
+        <div class="explore-emerging-main">
+          <p class="explore-emerging-meta">Digital Civil Society · Emerging research domain</p>
+          <p>The question emerges naturally as persistent AI-mediated relationships move beyond individual delegation into institutional and collective settings. Acaiaca is following the domain because it may reshape participation, representation, legitimacy, and coordination, but the current work has not yet developed enough bounded Acaiaca inquiry to justify a standalone substantive Research-Area page.</p>
+          <p class="explore-emerging-relation">This is why Digital Civil Society remains visible in the landscape even though it does not behave like the implemented Research-Area destinations above.</p>
+          <p class="explore-no-route">Intentionally represented without a standalone destination.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-current-bridge" aria-labelledby="current-title">
+      <div class="page-shell explore-current-grid">
+        <header>
+          <p class="eyebrow">From landscape to work</p>
+          <h2 id="current-title">What is Acaiaca working on now?</h2>
+        </header>
+        <div>
+          <p class="explore-current-copy">These questions generate propositions, constructs, working models, analytical problems, operationalization questions, and other research at different stages of development. Explore maps the research landscape. Current Research maps the work materially in motion within it.</p>
+          <div class="explore-current-next">
+            Continue to Current Research →
+            <span class="explore-current-route-state">Governed destination · no public page currently available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-provenance" aria-labelledby="provenance-title">
+      <div class="page-shell explore-provenance-grid">
+        <div>
+          <p class="eyebrow">Research provenance</p>
+          <h2 id="provenance-title">Governed research, translated for entry.</h2>
+          <p>Research Agenda v1.2 remains authoritative for what Acaiaca is investigating. Explore reorganizes and compresses that substance for visitor comprehension without changing canonical research priorities, maturity, or research identities.</p>
+          <div class="explore-provenance-links">
+            <a href="/research/agenda/">Research Agenda — Proposition Index →</a>
+          </div>
+        </div>
+        <aside class="explore-lineage" aria-label="Intellectual posture">
+          <p class="eyebrow">Intellectual posture</p>
+          <p>These questions sit within deep existing work across judgment and decision research, human factors, law, governance, sociotechnical systems, responsibility, participation, identity, security, and related fields. Acaiaca’s task is not to rename that inheritance, but to identify where increasingly capable and persistent artificial systems create unresolved combinations of those problems.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="explore-footer">
+    <div class="page-shell explore-footer-inner">
+      <a class="explore-footer-identity" href="/">
+        <Image src={treeMark} alt="" width={28} height={28} />
+        <span>Acaiaca Institute</span>
+      </a>
+      <p>Humanity is the loop.</p>
+      <a href="/">Return to the Homepage</a>
+    </div>
+  </footer>
+</Layout>
