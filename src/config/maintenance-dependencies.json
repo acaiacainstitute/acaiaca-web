@@ -20,6 +20,12 @@
       "target": "human-agency-loop",
       "label": "Human Agency Loop",
       "source": "Research Agenda v1.2"
+    },
+    "research-object:persistent-agentic-state": {
+      "targetType": "research-object",
+      "target": "persistent-agentic-state",
+      "label": "Persistent Agentic State",
+      "source": "Research Agenda v1.2"
     }
   },
   "artifacts": {
@@ -41,6 +47,24 @@
         },
         {
           "target": "research-object:human-agency-loop",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        }
+      ]
+    },
+    "research-area:digital-sovereignty": {
+      "label": "Digital Sovereignty",
+      "canonicalPath": "/research/digital-sovereignty/",
+      "dependencies": [
+        {
+          "target": "proposition:P11",
+          "role": "principal",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-object:persistent-agentic-state",
           "role": "material",
           "reviewOnMaterialChange": true,
           "syncOnRepresentationChange": true
