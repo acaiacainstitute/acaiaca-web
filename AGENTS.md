@@ -233,3 +233,62 @@ Consult these guides before working on related tasks:
 * [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
 * [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
 * [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+
+## Repository and workspace boundary
+
+This repository is the software implementation surface for Acaiaca Institute.
+
+The local development workspace may be structured as:
+
+acaiacainstitute/
+├── acaiaca-knowledge/
+└── acaiaca-web/
+
+`acaiacainstitute/` is an Obsidian vault synchronized across the owner's
+devices using Obsidian Sync. Obsidian Sync is a device-synchronization
+mechanism; it is not the source-control or software-delivery mechanism.
+
+The two child directories have separate Git boundaries:
+
+- `acaiaca-knowledge/` is the private governed knowledge repository.
+  Human-authored research, decisions, governance, specifications, and
+  canonical knowledge are maintained there.
+- `acaiaca-web/` is this repository. It contains the public website
+  implementation and public-safe web assets.
+
+Do not treat the parent Obsidian vault as a Git repository.
+
+Do not move implementation artifacts into `acaiaca-knowledge` merely
+because both directories may appear in the same Obsidian vault.
+
+Do not modify `acaiaca-knowledge` as part of an `acaiaca-web` software
+implementation task unless the task explicitly authorizes a governed
+knowledge change.
+
+Generated and dependency directories such as `node_modules/`, `dist/`,
+and `.astro/` are local implementation artifacts. They are not governed
+knowledge and should be excluded from Obsidian Sync where supported.
+Their local presence inside `acaiaca-web/` does not make them part of the
+governed knowledge corpus.
+
+When an accepted knowledge artifact requires website implementation,
+the normal direction of authority is:
+
+acaiaca-knowledge
+        ↓
+accepted specification / canonical content
+        ↓
+acaiaca-web
+        ↓
+validation
+        ↓
+Git commit / review / deployment
+
+GitHub is the source-control and collaboration system for each
+repository. Obsidian Sync provides cross-device synchronization of the
+local vault and does not replace Git history, review, or repository
+governance.
+
+Each child repository maintains its own independent Git history and
+GitHub remote. Changes to one repository do not imply or authorize
+changes to the other.
