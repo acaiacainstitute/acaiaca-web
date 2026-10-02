@@ -13,6 +13,7 @@ provenance:
   publicPresentationOf: Acaiaca Institute's Human–AI Agency research area
   publicSources:
     - Research Agenda v1.1
+    - Research Agenda v1.2
     - Intellectual Landscape v1.1
 ---
 
@@ -160,6 +161,6 @@ provenance:
   <div class="page-shell research-provenance-grid">
     <div><p class="research-provenance-label">Public presentation</p><p>Human–AI Agency · Research-area page · Active inquiry</p></div>
     <div><p class="research-provenance-label">Research objects represented</p><p>P6 · P8 · Human Agency Loop. Parent-owned here; no independent route implied.</p></div>
-    <div><p class="research-provenance-label">Research context</p><p>September 2026 · provisionality and currentness should be reconfirmed before publication.</p></div>
+    <div><p class="research-provenance-label">Research context</p><p>Research Agenda v1.2 · September 2026 · provisionality and currentness should be reconfirmed before publication.</p></div>
   </div>
 </aside>
