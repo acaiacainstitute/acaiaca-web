@@ -1,5 +1,10 @@
 {
   "targets": {
+    "proposition:P4": {
+      "targetType": "proposition",
+      "target": "P4",
+      "source": "Research Agenda v1.2"
+    },
     "proposition:P6": {
       "targetType": "proposition",
       "target": "P6",
@@ -112,6 +117,12 @@
       "canonicalPath": "/research/agenda/",
       "dependencies": [
         {
+          "target": "proposition:P4",
+          "role": "principal",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
           "target": "proposition:P6",
           "role": "principal",
           "reviewOnMaterialChange": true,
@@ -167,6 +178,84 @@
         },
         {
           "target": "research-state:digital-civil-society",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        }
+      ]
+    },
+    "navigation:current-research": {
+      "label": "Current Research",
+      "canonicalPath": "/research/current/",
+      "dependencies": [
+        {
+          "target": "research-state:human-ai-agency",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-state:delegation-authority",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-state:responsibility-in-ai-mediated-systems",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-state:digital-sovereignty",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-state:judgment",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-state:digital-civil-society",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "proposition:P8",
+          "role": "principal",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "proposition:P4",
+          "role": "supporting",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "proposition:P11",
+          "role": "principal",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "proposition:P6",
+          "role": "supporting",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-object:human-agency-loop",
+          "role": "material",
+          "reviewOnMaterialChange": true,
+          "syncOnRepresentationChange": true
+        },
+        {
+          "target": "research-object:persistent-agentic-state",
           "role": "material",
           "reviewOnMaterialChange": true,
           "syncOnRepresentationChange": true

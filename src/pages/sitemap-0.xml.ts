@@ -22,7 +22,7 @@ export const GET: APIRoute = async () => {
       data.publication.visibility === 'public' &&
       data.publication.status === 'published',
   );
-  const paths = ['/', '/research/', '/research/agenda/', ...researchAreas.map(({ data }) => data.canonicalPath)];
+  const paths = ['/', '/research/', '/research/agenda/', '/research/current/', ...researchAreas.map(({ data }) => data.canonicalPath)];
   const urls = paths
     .map((path) => `  <url><loc>${escapeXml(absoluteUrl(path))}</loc></url>`)
     .join('\n');

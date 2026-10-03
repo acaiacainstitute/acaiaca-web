@@ -1,0 +1,210 @@
+---
+import { Image } from 'astro:assets';
+import treeMark from '../../assets/brand/acaiaca-tree-mark-ivory.png';
+import Header from '../../components/Header.astro';
+import Layout from '../../layouts/Layout.astro';
+import { webPageStructuredData } from '../../lib/metadata';
+import '../../styles/current-research.css';
+
+const metadata = {
+  title: 'Current Research',
+  description:
+    'Work Acaiaca Institute is materially advancing: proposed claims, provisional constructs, working models, and active analytical or operationalization questions.',
+  canonicalPath: '/research/current/',
+};
+const pageTitle = metadata.title + ' | Acaiaca Institute';
+---
+
+<Layout
+  title={pageTitle}
+  description={metadata.description}
+  canonicalPath={metadata.canonicalPath}
+  structuredData={webPageStructuredData(metadata)}
+>
+  <a class="current-skip-link" href="#main-content">Skip to main content</a>
+  <Header />
+  <main id="main-content" class="current-page">
+<section class="current-hero" aria-labelledby="current-title"><div class="page-shell current-hero-grid">
+  <div class="current-hero-main">
+    <p class="eyebrow">Current Research</p>
+    <h1 id="current-title">What is Acaiaca working on now?</h1>
+    <p class="current-hero-question">A current map of work Acaiaca is materially advancing.</p>
+    <p class="current-hero-lede">Current Research shows work Acaiaca is materially advancing now. That may include a proposed claim being examined, a provisional construct being developed, a working model being evaluated, or an analytical or operational problem being worked. Not every unresolved Acaiaca question appears here.</p>
+  </div>
+  <aside class="current-hero-side" aria-label="Currentness">
+    <p class="eyebrow">What “current” means</p>
+    <strong>Materially advancing now.</strong>
+    <p>Not every unresolved question is current. A piece of work belongs here when there is identifiable present activity and meaningful next movement.</p>
+    <p class="current-currentness">Current as of September 2026</p>
+  </aside>
+</div></section>
+
+<section class="current-definition" aria-labelledby="current-definition-title"><div class="page-shell current-definition-grid">
+  <div><p class="eyebrow">Reading this page</p><h2 id="current-definition-title">Current does not mean mature.</h2></div>
+  <div class="current-definition-copy">
+    <p>These labels describe what the work currently is. They do not imply that every item has reached the same level of evidence, stability, validation, or publication maturity.</p>
+    <p class="current-definition-callout">Current means Acaiaca is materially advancing the work now—not merely that the question remains open.</p>
+  </div>
+</div></section>
+
+<section class="current-area current-area--wash" aria-labelledby="current-agency-title"><div class="page-shell current-area-grid">
+  <header class="current-area-head">
+    <p class="eyebrow">Research area</p>
+    <h2 id="current-agency-title">Human–AI Agency</h2>
+    <p class="current-area-orientation">Current work asks both whether AI assistance can improve judgment-related performance without materially reducing practical agency and how practical agency can be represented over time.</p>
+    <a class="current-area-route" href="/research/human-ai-agency/">Why does practical agency require more than keeping a human “in the loop”? →</a>
+    <span class="current-route-state">Implemented parent destination</span>
+  </header>
+  <div class="current-units">
+    <article class="current-unit">
+      <h3 class="current-unit-title">Under what conditions can AI improve judgment-related performance without materially reducing practical agency?</h3>
+      <p class="current-meta">Proposed claim · <a href="/research/agenda/#p8" aria-label="Proposition P8: AI assistance, judgment performance, and practical agency">P8 · Proposed</a></p>
+      <div class="current-currently"><span class="current-current-label">Currently:</span><p class="current-current-text">Acaiaca is examining performance and practical agency as separate outcomes rather than assuming better system results necessarily produce stronger human agency.</p></div>
+      <p class="current-supporting">Increasing system capability does not necessarily increase human agency. <a href="/research/agenda/#p6" aria-label="Proposition P6: system capability and human agency">P6 · Proposed</a> remains a supporting foundational / inherited premise inside this activity.</p>
+      <div class="current-unresolved"><span class="current-unresolved-label">Unresolved</span><p class="current-unresolved-copy">Which conditions permit performance gains while preserving meaningful understanding, influence, intervention, revocation, contestability, and realistic exit?</p></div>
+    </article>
+    <article class="current-unit">
+      <h3 class="current-unit-title">Representing practical agency over time</h3>
+      <p class="current-meta">Active analytical / operationalization problem · Human Agency Loop as working tracing model</p>
+      <div class="current-currently"><span class="current-current-label">Currently:</span><p class="current-current-text">Acaiaca is investigating whether practical agency can be represented usefully across understanding, influence, intervention, revocation, contestability, and realistic exit, and how those abilities change under repeated AI assistance.</p></div>
+      <p class="current-supporting">The Human Agency Loop is a working model being evaluated as a tracing instrument within this inquiry.</p>
+      <p class="current-supporting">Longitudinal issues include dependence, retained competence, trust calibration, learned delegation, preference drift, and realistic exit. Retained competence remains adjacent to the six-question practical-agency profile rather than becoming another dimension.</p>
+    </article>
+  </div>
+</div></section>
+
+<section class="current-area" aria-labelledby="current-authority-title"><div class="page-shell current-area-grid">
+  <header class="current-area-head">
+    <p class="eyebrow">Research area</p>
+    <h2 id="current-authority-title">Delegation &amp; Authority</h2>
+    <p class="current-area-orientation">The current cluster examines how legitimate authority can remain bounded, traceable, revocable, and institutionally recognizable without being collapsed into technical permission.</p>
+    <span class="current-route-state">A substantive Research-Area destination is governed; no public page is currently available.</span>
+  </header>
+  <div class="current-units">
+    <article class="current-unit">
+      <h3 class="current-unit-title">How can legitimate authority become technically representable without being reduced to technical permission?</h3>
+      <p class="current-meta">Active analytical / operationalization problem</p>
+      <div class="current-currently"><span class="current-current-label">Currently:</span><p class="current-current-text">Acaiaca is decomposing what has actually been delegated and examining how scope, context, duration, representation, subdelegation, revocation, and institutional recognition could remain traceable across AI-mediated systems.</p></div>
+      <div class="current-question-list" aria-label="Supporting questions">
+        <p>What exactly moved: work, discretion, execution, representation, or authority?</p>
+        <p>Can a delegate create another delegation?</p>
+        <p>How should revocation propagate?</p>
+        <p>What evidence supports the authority claim at the moment of action?</p>
+        <p>How should one institution recognize authority originating in another?</p>
+      </div>
+      <p class="current-supporting">Authentication and technical authorization remain distinct from legitimate authority. Neither, by itself, establishes legitimacy.</p>
+    </article>
+  </div>
+</div></section>
+
+<section class="current-area current-area--wash" aria-labelledby="current-responsibility-title"><div class="page-shell current-area-grid">
+  <header class="current-area-head">
+    <p class="eyebrow">Research area</p>
+    <h2 id="current-responsibility-title">Responsibility in AI-Mediated Systems</h2>
+    <p class="current-area-orientation">Current work traces responsibility relationships when causation, authority, control, understanding, action, and consequence no longer reside in the same actor.</p>
+    <span class="current-route-state">A substantive Research-Area destination is governed; no public page is currently available.</span>
+  </header>
+  <div class="current-units">
+    <article class="current-unit">
+      <h3 class="current-unit-title">Tracing distributed responsibility</h3>
+      <p class="current-meta">Active analytical / operationalization problem</p>
+      <p class="current-supporting"><strong>Supporting provenance:</strong> <a href="/research/agenda/#p4" aria-label="Proposition P4: responsibility when control, authority, understanding, and consequences are separated">P4 · Proposed</a><br />Foundational / inherited premise</p>
+      <div class="current-currently"><span class="current-current-label">Currently:</span><p class="current-current-text">Acaiaca is distinguishing different responsibility relationships and examining how they can be traced across delegated judgment, authority, control, execution, institutions, and consequences without collapsing causation into normative, legal, or institutional responsibility.</p></div>
+      <div class="current-trace-list" aria-label="Analytical relationships">
+        <div class="current-trace-item"><b>Causal contribution</b><span>Who or what contributed to the outcome?</span></div>
+        <div class="current-trace-item"><b>Authority &amp; control</b><span>Who had standing or practical ability to shape what happened?</span></div>
+        <div class="current-trace-item"><b>Understanding</b><span>Who knew or reasonably could know what mattered?</span></div>
+        <div class="current-trace-item"><b>Role obligation</b><span>What duties attached to a person or institution?</span></div>
+        <div class="current-trace-item"><b>Answerability</b><span>Who must explain or justify what occurred?</span></div>
+        <div class="current-trace-item"><b>Remediation</b><span>Who can or must repair, compensate, correct, or prevent recurrence?</span></div>
+      </div>
+      <div class="current-unresolved"><span class="current-unresolved-label">Unresolved</span><p class="current-unresolved-copy">Which responsibility relationships depend on which combinations of role, knowledge, authority, control, delegation, understanding, and consequence, and how can they be traced without implying a universal allocation rule?</p></div>
+    </article>
+  </div>
+</div></section>
+
+<section class="current-area current-area--plum" aria-labelledby="current-sovereignty-title"><div class="page-shell current-area-grid">
+  <header class="current-area-head">
+    <p class="eyebrow">Research area</p>
+    <h2 id="current-sovereignty-title">Digital Sovereignty</h2>
+    <p class="current-area-orientation">One coupled inquiry tests whether persistent technical and institutional state creates a sovereignty problem that strong component mechanisms do not already resolve.</p>
+    <a class="current-area-route" href="/research/digital-sovereignty/">How does persistent state become a question of control across time? →</a>
+    <span class="current-route-state">Implemented parent destination</span>
+  </header>
+  <div class="current-units">
+    <article class="current-unit">
+      <h3 class="current-unit-title">Testing whether persistent state creates a joint sovereignty problem</h3>
+      <p class="current-meta">Coupled current inquiry · early active inquiry</p>
+      <div class="current-coupled" aria-label="One coupled inquiry: claim, provisional construct, and operationalization">
+        <div class="current-coupled-step"><h4>Joint persistent-state framing</h4><p><strong>Proposed integrative proposition · <a href="/research/agenda/#p11" aria-label="Proposition P11: persistent state and joint sovereignty">P11 · Proposed</a>.</strong> Asks whether treating persistent state jointly adds explanatory or governance value beyond strong component approaches.</p></div>
+        <div class="current-coupled-step"><h4>Persistent Agentic State</h4><p><strong>Provisional layered construct.</strong> A provisional layered construct owned by Digital Sovereignty, through which the proposition is examined.</p></div>
+        <div class="current-coupled-step"><h4>Layer-specific operationalization</h4><p>Examines portability, revocation, expiry, provenance, authorization continuity, institutional recognition, and related state-specific questions.</p></div>
+      </div>
+      <div class="current-currently"><span class="current-current-label">Currently:</span><p class="current-current-text">Acaiaca is comparing the joint persistent-state framing against strong component approaches in privacy, identity, authorization, memory, portability, provenance, delegation, and institutional governance while examining whether the layered construct adds useful explanatory or governance structure.</p></div>
+      <div class="current-unresolved"><span class="current-unresolved-label">What could change this?</span><p class="current-unresolved-copy">If existing component mechanisms prove sufficient when appropriately integrated, the stronger joint-sovereignty claim should narrow or be rejected.</p></div>
+    </article>
+  </div>
+</div></section>
+
+<section class="current-judgment" aria-labelledby="current-judgment-title"><div class="page-shell current-judgment-grid">
+  <div>
+    <p class="eyebrow">Bounded foundational inquiry</p>
+    <h2 id="current-judgment-title">Judgment</h2>
+    <p class="current-judgment-lede">The Judgment Thesis is Acaiaca’s current canonical account of judgment. It appears here only where that thesis is generating active research questions.</p>
+    <span class="current-route-state">The Judgment Thesis · governed deeper destination · no public page currently available</span>
+  </div>
+  <div>
+    <h3 class="current-unit-title">Questions generated by the Judgment Thesis</h3>
+    <p class="current-meta">Active foundational inquiry</p>
+    <p class="current-current-label">Currently:</p>
+    <div class="current-judgment-list">
+      <p>Do distinguishable forms of judgment share enough structure to justify the broad umbrella?</p>
+      <p>How should relevant constraints and their relative authority be operationalized?</p>
+      <p>How should judgment quality be evaluated?</p>
+      <p>What changes when AI participates materially in judgment?</p>
+      <p>Can AI exercise judgment rather than merely contribute to it?</p>
+      <p>How should distributed or multi-agent judgment be traced?</p>
+    </div>
+    <p class="current-supporting">The canonical thesis itself is not treated as “current research” merely because it is important. Constraint Architecture is not included as a Current Research public object.</p>
+  </div>
+</div></section>
+
+<section class="current-boundary" aria-labelledby="current-boundary-title"><div class="page-shell current-boundary-grid">
+  <div><p class="eyebrow">Boundary</p><h2 id="current-boundary-title">What does not appear here</h2></div>
+  <div>
+    <p>Not every unresolved Acaiaca question appears here. Work that is paused, stable, historical, superseded, or simply not being materially advanced belongs in its substantive research or provenance context rather than on this page.</p>
+    <p class="current-dcs-note"><strong>Digital Civil Society</strong> remains a legitimate emerging research domain, but there is no dedicated Current Research group because the governed corpus does not establish a bounded standalone current workstream.</p>
+  </div>
+</div></section>
+
+<section class="current-explore-bridge" aria-labelledby="current-explore-title"><div class="page-shell current-explore-grid">
+  <div><p class="eyebrow">Broader research landscape</p><h2 id="current-explore-title">Where does this work fit?</h2></div>
+  <div>
+    <p class="current-explore-copy">Explore maps the research landscape. Current Research maps the work materially in motion within it.</p>
+    <a class="current-explore-link" href="/research/">How does this work fit into Acaiaca’s broader research landscape? → Explore the Research</a>
+  </div>
+</div></section>
+
+<section class="current-provenance" aria-labelledby="current-provenance-title"><div class="page-shell current-provenance-grid">
+  <div>
+    <p class="eyebrow">Currentness &amp; provenance</p>
+    <h2 id="current-provenance-title">Current is an editorial assertion.</h2>
+    <p>This page reflects work Acaiaca is materially advancing at the stated date. Deeper research pages and governed research artifacts carry fuller context, evidence, and revision history.</p>
+  </div>
+  <div class="current-note">
+    <p class="eyebrow">Publication note</p>
+    <p><strong>Current as of September 2026.</strong> The publication-month assertion must be reconfirmed before production content acceptance.</p>
+  </div>
+</div></section>
+</main>
+  <footer class="current-footer">
+    <div class="page-shell current-footer-inner">
+      <a class="current-footer-identity" href="/">
+        <Image src={treeMark} alt="" width={28} height={28} />
+        <span>Acaiaca Institute</span>
+      </a>
+      <p>Humanity is the loop.</p>
+      <a href="/">Return to the Homepage</a>
+    </div>
+  </footer>
+</Layout>
