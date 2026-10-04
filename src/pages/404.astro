@@ -1,0 +1,27 @@
+---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Page not found | Acaiaca Institute"
+  description="The requested page could not be found."
+  canonicalPath="/404.html"
+>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <Header />
+  <main id="main-content" class="page-shell" tabindex="-1">
+    <p class="eyebrow">404</p>
+    <h1>Page not found</h1>
+    <p>The requested page could not be found.</p>
+    <p><a class="cta-link" href="/">Return to the Homepage →</a></p>
+    <p><a class="cta-link" href="/research/">Explore the Research →</a></p>
+  </main>
+</Layout>
+
+<style>
+  main { padding-block: 3rem; }
+  h1 { font-family: var(--font-serif); font-weight: 400; line-height: 1.2; }
+  .skip-link { position: absolute; left: var(--gutter); top: 0.75rem; z-index: 10; padding: 0.5rem 0.8rem; background: var(--color-ivory); transform: translateY(-200%); }
+  .skip-link:focus { transform: translateY(0); }
+</style>
